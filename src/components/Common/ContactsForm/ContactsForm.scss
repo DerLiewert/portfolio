@@ -1,0 +1,167 @@
+@use '@/styles/index' as *;
+
+.form {
+  &__fields-wrapper {
+    margin-bottom: 12px;
+
+    @include media-min($mobileSmall) {
+      margin-bottom: 15px;
+    }
+    @include media-min($mobile) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  }
+
+  &__field {
+    @include media-min($mobile) {
+      &:nth-child(n + 3) {
+        grid-column: 1 / -1;
+      }
+    }
+
+    & + & {
+      @include media-max($mobile) {
+        margin-top: 15px;
+      }
+      @include media-max($mobileSmall) {
+        margin-top: 13px;
+      }
+    }
+  }
+
+  label {
+    font-weight: 500;
+    margin: 0 0 7px 7px;
+
+    @include media-max($mobileSmall) {
+      font-size: 14px;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgb(var(--border-color-rgb), 0.3);
+    box-shadow: 0px 0px 3px 2px transparent;
+    transition: border-color $duration ease 0s;
+
+    @include media-max($tablet) {
+      border-radius: 8px;
+    }
+    @include media-max($mobile) {
+      font-size: 14px;
+      padding: 10px 12px;
+      border-radius: 7px;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--accent-primary);
+      box-shadow: 0px 0px 3px 2px rgba(var(--accent-primary-rgb), 0.6);
+    }
+  }
+
+  &__input {
+  }
+  &__textarea-wrapper {
+    position: relative;
+  }
+  &__textarea {
+    min-height: 160px;
+    resize: none;
+  }
+  &__message {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--success);
+    padding: 7px 10px;
+    border-radius: 6px;
+    background-color: var(--bg-color);
+    box-shadow: 0px 0px 5px 3px rgba(var(--success-rgb), 0.6);
+
+    &._error {
+      color: var(--error);
+      box-shadow: 0px 0px 5px 3px rgba(var(--error-rgb), 0.6);
+    }
+
+    @include media-max($tablet) {
+      border-radius: 5px;
+    }
+    @include media-max($mobile) {
+      border-radius: 4px;
+    }
+
+    button {
+      flex-shrink: 0;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 0;
+      height: 16px;
+      width: 16px;
+      margin-right: -2px;
+      margin-left: 10px;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    gap: 15px;
+    @include media-max($tablet) {
+      justify-content: flex-end;
+    }
+  }
+  &__button {
+    min-width: 250px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--btn-text);
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: var(--btn-bg);
+    transition: background-color $duration ease 0s;
+
+    &:focus {
+      background-color: var(--accent-primary);
+      color: #fff;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: var(--accent-primary);
+        color: #fff;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    @include media-max($tablet) {
+      border-radius: 8px;
+    }
+    @include media-max($mobile) {
+      min-width: 220px;
+      padding: 12px 25px;
+      border-radius: 7px;
+    }
+    @include media-max($mobileSmall) {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+}

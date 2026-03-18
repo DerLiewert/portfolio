@@ -1,0 +1,243 @@
+@use '@/styles/index' as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 900;
+  padding: 20px 0;
+  transition-property: backdrop-filter, box-shadow, background-color, padding, border-bottom-color;
+  transition-timing-function: ease;
+  transition-duration: $duration;
+  border-bottom: 1px solid rgba(var(--border-color-rgb), 1);
+
+  &._absolute {
+    position: absolute;
+    border-bottom-color: rgba(var(--border-color-rgb), 0);
+    .menu-open & {
+      border-bottom-color: rgba(var(--border-color-rgb), 1);
+    }
+  }
+
+  &._header-scroll {
+    position: sticky;
+    background-color: rgba(var(--bg-color-rgb), 0.9);
+    backdrop-filter: blur(5px);
+
+    &._absolute {
+      position: fixed;
+      border-bottom-color: rgba(var(--border-color-rgb), 1);
+    }
+
+    @include media-min($mobile) {
+      padding: 15px 0;
+    }
+  }
+
+  @include media-max($tablet) {
+    padding: 15px 0;
+  }
+  @include media-max($mobile) {
+    padding: 12px 0;
+  }
+  @include media-max($mobileSmall) {
+    padding: 10px 0;
+  }
+
+  &__inner,
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__inner {
+    gap: 10px 60px;
+    @include media-max($tablet) {
+      column-gap: 40px;
+    }
+  }
+
+  &__actions {
+    gap: 10px 32px;
+    @include media-max($mobileSmall) {
+      column-gap: 26px;
+    }
+    @include media-max(360px) {
+      column-gap: 16px;
+    }
+  }
+
+  &__logo {
+    svg {
+      width: auto;
+      height: 36px;
+      transition: height $duration ease 0s;
+
+      path {
+        fill: var(--text-color);
+        transition: fill $duration ease 0s;
+      }
+
+      @include media-min($mobileSmall) {
+        height: 40px;
+      }
+      @include media-min($mobile) {
+        height: 48px;
+      }
+      @include media-min($tablet) {
+        height: 56px;
+      }
+
+      ._header-scroll & {
+        height: 28px;
+        @include media-min($mobile) {
+          height: 42px;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    margin-right: auto;
+  }
+
+  &__actions {
+  }
+
+  &__theme {
+  }
+
+  &__lang {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 3px;
+  }
+
+  &__lang-item {
+    color: var(--text-color);
+    text-transform: uppercase;
+    line-height: 1.4;
+    transition: color $duration ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent-primary-light);
+      }
+    }
+
+    &._active {
+      &::after {
+        width: 100%;
+      }
+      color: var(--accent-primary);
+    }
+
+    @include media-max($mobile) {
+      font-size: 14px;
+    }
+    @include media-max($mobileSmall) {
+      font-size: 13px;
+    }
+  }
+
+  &__burger {
+    @include media-max($mobile) {
+      width: 32px;
+      height: 16px;
+    }
+  }
+}
+
+.header-menu {
+  &__body {
+    @include media-max($tablet) {
+      position: absolute;
+      top: calc(100% + 1px);
+      left: 100%;
+      width: 100%;
+      height: calc(100vh - 100% - 1px);
+      background-color: var(--bg-color);
+      padding: 30px 10px;
+      overflow: auto;
+      transition:
+        left $duration ease 0s,
+        background-color $duration ease 0s;
+
+      .menu-open & {
+        left: 0;
+      }
+
+      @include media-min($mobile) {
+        padding: 30px math.div($containerPadding, 2) + px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 70px;
+    margin-top: 3px;
+
+    @include media-max($tablet) {
+      flex-direction: column;
+      align-items: flex-end;
+      row-gap: 20px;
+    }
+    @include media-max($mobile) {
+      row-gap: 18px;
+    }
+    @include media-max($mobileSmall) {
+      row-gap: 15px;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent-primary)
+        linear-gradient(-90deg, var(--accent-secondary) 0%, var(--accent-primary) 80%);
+      transition: width $duration ease 0s;
+      pointer-events: none;
+    }
+
+    &._active {
+      &::after {
+        width: 100%;
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    @include media-min($mobileSmall) {
+      font-size: 16px;
+    }
+    @include media-min($mobile) {
+      font-size: 18px;
+    }
+  }
+}

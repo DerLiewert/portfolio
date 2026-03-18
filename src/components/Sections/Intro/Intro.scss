@@ -1,0 +1,228 @@
+@use '@/styles/index' as *;
+
+.intro {
+  background: linear-gradient(
+    45deg,
+    rgba(var(--accent-primary-rgb), 0.01) 0%,
+    rgba(var(--accent-primary-rgb), 0.08) 40%,
+    rgba(var(--accent-secondary-rgb), 0.08) 100%
+  );
+
+  [data-theme='light'] & {
+    background: linear-gradient(
+      45deg,
+      rgba(var(--accent-primary-rgb), 0.01) 0%,
+      rgba(var(--accent-primary-rgb), 0.04) 40%,
+      rgba(var(--accent-secondary-rgb), 0.065) 100%
+    );
+  }
+
+  &__container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__body {
+    width: 100%;
+    column-gap: 40px;
+    padding-top: 110px;
+    padding-bottom: 80px;
+
+    @include media-min($mobileSmall) {
+      padding-top: 140px;
+    }
+    @include media-min($mobile) {
+      padding-top: 150px;
+    }
+    @include media-min($tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    max-width: 650px;
+
+    @include media-min($mobile) {
+      max-width: 700px;
+    }
+    @include media-min($tablet) {
+      flex: 0 1 700px;
+    }
+    @include media-max($tablet) {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background: var(--accent-secondary)
+      linear-gradient(0deg, var(--accent-secondary) 0%, var(--accent-primary) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 32px;
+    @include media-min($mobileSmall) {
+      font-size: 36px;
+    }
+    @include media-min($mobile) {
+      font-size: 42px;
+      margin-bottom: 30px;
+    }
+    @include media-min($tablet) {
+      font-size: 52px;
+    }
+    @include media-min($pcSmall) {
+      font-size: 56px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 25px;
+    @include media-min($mobileSmall) {
+      margin-bottom: 28px;
+    }
+    @include media-min($mobile) {
+      margin-bottom: 30px;
+    }
+    @include media-min($tablet) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__text {
+    font-size: 26px;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+
+    span {
+      font-weight: 700;
+      background: var(--accent-secondary)
+        linear-gradient(-15deg, var(--accent-secondary) 0%, var(--accent-primary) 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @include media-max(1200px) {
+      font-size: 24px;
+      font-size: 22px;
+    }
+    @include media-max($tablet) {
+      font-size: 22px;
+      font-size: 20px;
+      margin-bottom: 22px;
+    }
+    @include media-max($mobile) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    @include media-max($mobileSmall) {
+      font-size: 16px;
+    }
+  }
+
+  &__stack {
+    line-height: 1.5;
+    opacity: 0.8;
+
+    span {
+      display: inline-flex;
+      align-items: center;
+      &:not(:last-child) {
+        &::after {
+          content: '•';
+          display: inline-block;
+          margin: 0 7px;
+          font-weight: 700;
+          color: var(--accent-primary);
+        }
+      }
+    }
+
+    @include media-max($mobile) {
+      font-size: 15px;
+    }
+    @include media-max($mobileSmall) {
+      font-size: 13px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    @include media-max($tablet) {
+      justify-content: center;
+    }
+    @include media-max($mobileSmall) {
+      gap: 10px;
+    }
+  }
+
+  &__image-block {
+    flex: 0 1 520px;
+    position: relative;
+    @include media-max($pc) {
+      min-width: 400px;
+      flex-basis: 38%;
+    }
+
+    @include media-max($tablet) {
+      display: none;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+    @include media-max($mobile) {
+      max-width: 350px;
+    }
+  }
+
+  &__nickname {
+    font-size: 36px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    z-index: 1;
+    padding: 6px 15px;
+    background-color: rgba(var(--bg-color-rgb), 0.6);
+    box-shadow: 0px 0px 5px 3px rgba(var(--shadow-color-rgb), 0.6);
+
+    @include media-between($tablet, $pc) {
+      font-size: 2.57142857vw;
+    }
+    @include media-max($tablet) {
+      font-size: 26px;
+      padding: 5px 12px;
+      bottom: 20px;
+    }
+    @include media-max($mobile) {
+      font-size: 22px;
+      padding: 5px 10px;
+    }
+    @include media-max(360px) {
+      font-size: 18px;
+      padding: 5px 10px;
+      bottom: 15px;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

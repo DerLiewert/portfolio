@@ -1,0 +1,23 @@
+<svg viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.000000" height="21.000000" fill="none">
+	<defs>
+		<radialGradient id="paint_radial_0" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-14.0997,1.90025,-3.50397,-25.9993,1.00804,-3.21766)">
+			<stop stop-color="rgb(251,254,250)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(201,246,180)" offset="0.395999998" stop-opacity="1" />
+			<stop stop-color="rgb(171,255,132)" offset="0.776000023" stop-opacity="1" />
+			<stop stop-color="rgb(47,238,101)" offset="1" stop-opacity="1" />
+		</radialGradient>
+		<radialGradient id="paint_radial_1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-14.0997,-1.9003,3.50406,-25.9993,9.408,-3.21774)">
+			<stop stop-color="rgb(251,254,250)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(201,246,180)" offset="0.395999998" stop-opacity="1" />
+			<stop stop-color="rgb(171,255,132)" offset="0.776000023" stop-opacity="1" />
+			<stop stop-color="rgb(47,238,101)" offset="1" stop-opacity="1" />
+		</radialGradient>
+	</defs>
+	<rect id="gsap" width="21.000000" height="21.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="Group">
+		<g id="Group">
+			<path id="Vector" d="M0 5.25C0 2.35048 2.33167 0 5.208 0C8.08433 0 10.416 2.35048 10.416 5.25C10.416 8.14952 8.08433 10.5 5.208 10.5C8.08433 10.5 10.416 12.8505 10.416 15.75C10.416 18.6495 8.08433 21 5.208 21C2.33167 21 0 18.6495 0 15.75C0 12.8505 2.33167 10.5 5.208 10.5C2.33167 10.5 0 8.14952 0 5.25Z" fill="url(#paint_radial_0)" fill-rule="evenodd" transform="matrix(-4.37114e-08,1,-1,-4.37114e-08,21,10.584)" />
+			<path id="Vector" d="M10.416 5.25C10.416 2.35048 8.08433 0 5.208 0C2.33167 0 0 2.35048 0 5.25C0 8.14952 2.33167 10.5 5.208 10.5C2.33167 10.5 0 12.8505 0 15.75C0 18.6495 2.33167 21 5.208 21C8.08433 21 10.416 18.6495 10.416 15.75C10.416 12.8505 8.08433 10.5 5.208 10.5C8.08433 10.5 10.416 8.14952 10.416 5.25Z" fill="url(#paint_radial_1)" fill-rule="evenodd" transform="matrix(-4.37114e-08,1,-1,-4.37114e-08,21,0)" />
+		</g>
+	</g>
+</svg>

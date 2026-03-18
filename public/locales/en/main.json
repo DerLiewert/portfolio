@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "description": "My name is Vlad — <span>web developer</span>, passionate about creating beautiful and responsive websites.",
+    "stack": ["React", "Redux", "TypeScript", "UI/UX", "Performance", "7 real projects"],
+    "downloadCV": "Download CV",
+    "contacts": "My contacts"
+  },
+  "about": {
+    "title": "About me",
+    "image": "Background image"
+  },
+  "skills": {
+    "title": "Skills",
+    "list": [
+      "Able to read and write HTML5 and CSS3",
+      "Know how to implement responsive design and work with frameworks",
+      "Able to build web projects using both Desktop-first and Mobile-first approaches",
+      "Have experience with JavaScript and front-end frameworks",
+      "Confidently use version control systems (Git)",
+      "Understand how to optimize web performance",
+      "Know how to ensure cross-browser compatibility",
+      "Have experience working with RESTful APIs and asynchronous data fetching"
+    ]
+  },
+  "technologies": "Technologies",
+  "projects": {
+    "title": "My projects",
+    "text": "Real-world projects demonstrating my skills in architecture, UI, and data handling.",
+    "sourceCode": "View source code on GitHub",
+    "liveDemo": "View live demo"
+  }
+}

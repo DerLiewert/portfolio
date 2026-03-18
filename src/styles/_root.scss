@@ -1,0 +1,59 @@
+//=== Colors =====================================================================================================================================================
+
+:root {
+  --font-family-title: 'Open Sans', sans-serif;
+
+  --text-color: #fff;
+  --text-color-rgb: 255, 255, 255;
+
+  --bg-color: #181818;
+  --bg-color-rgb: 24, 24, 24;
+
+  --shadow-color: #fff;
+  --shadow-color-rgb: 255, 255, 255;
+
+  --card-bg: #000;
+  --card-bg-rgb: 0, 0, 0;
+  --card-text: #fff;
+
+  --toggle-theme-bg: #4c4c4c;
+  --toggle-theme-switcher: #757575;
+
+  --btn-bg: #fff;
+  --btn-text: #181818;
+
+  --border-color: #fff;
+  --border-color-rgb: 255, 255, 255;
+
+  --accent-primary: #fe0000;
+  --accent-primary-rgb: 254, 0, 0;
+  --accent-primary-light: #ff2d2d;
+  --accent-primary-light-rgb: 252, 89, 78;
+  --accent-secondary: #0034ff;
+  --accent-secondary-rgb: 0, 52, 255;
+
+  --success: #13bb4e;
+  --success-rgb: 19, 187, 78;
+  --error: #ff0000;
+  --error-rgb: 255, 0, 0;
+}
+
+[data-theme='light'] {
+  --text-color: #181818;
+  --text-color-rgb: 24, 24, 24;
+
+  --bg-color: #f3f4f5;
+  --bg-color-rgb: 248, 249, 251;
+
+  --shadow-color: #000;
+  --shadow-color-rgb: 0, 0, 0;
+
+  --border-color: #181818;
+  --border-color-rgb: 24, 24, 24;
+
+  --btn-bg: #181818;
+  --btn-text: #fff;
+
+  --toggle-theme-bg: #fff;
+  --toggle-theme-switcher: #d4d4d4;
+}

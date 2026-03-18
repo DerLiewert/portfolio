@@ -1,0 +1,519 @@
+@use '../../styles/index' as *;
+
+.project {
+  padding: 20px 0;
+  @include media-min($mobileSmall) {
+    padding-top: 25px;
+  }
+  @include media-min($mobile) {
+    padding: 30px 0 10px;
+  }
+  @include media-min($tablet) {
+    padding: 35px 0 0;
+  }
+
+  &__header {
+    margin-bottom: 15px;
+    @include media-min($mobile) {
+      margin-bottom: 18px;
+    }
+    @include media-min($tablet) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__preview {
+    margin-bottom: 23px;
+    @include media-min($tablet) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__info {
+  }
+}
+
+.proj-text {
+  font-size: 14px;
+  line-height: 1.4;
+  @include media-min($mobile) {
+    font-size: 16px;
+  }
+  @include media-min($pcSmall) {
+    font-size: 18px;
+  }
+}
+
+.proj-header {
+  &__body {
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--text-color);
+  }
+
+  &__sub-title {
+    font-size: 12px;
+    line-height: math.div(24, 20);
+    color: rgba(var(--accent-primary-rgb), 0.9);
+    padding-left: 18px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 6px;
+      left: 0;
+      height: 1px;
+      width: 12px;
+      background-color: var(--text-color);
+
+      @include media-min($mobileSmall) {
+        top: 8px;
+        width: 15px;
+      }
+      @include media-min($tablet) {
+        top: 9px;
+        width: 18px;
+      }
+    }
+
+    @include media-min($mobileSmall) {
+      font-size: 14px;
+      padding-left: 22px;
+    }
+    @include media-min($mobile) {
+      font-size: 15px;
+    }
+    @include media-min($tablet) {
+      font-size: 16px;
+      padding-left: 25px;
+    }
+    @include media-min($pcSmall) {
+      font-size: 18px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: math.div(39, 32);
+
+    @include media-min($mobileSmall) {
+      font-size: 24px;
+    }
+    @include media-min($mobile) {
+      font-size: 28px;
+    }
+    @include media-min($tablet) {
+      font-size: 32px;
+    }
+    @include media-min($pcSmall) {
+      font-size: 36px;
+    }
+  }
+
+  &__sub-title + &__title {
+    margin-top: 5px;
+  }
+}
+
+//========================================================================================================================================================
+.proj-preview {
+  &__slider {
+    height: 720px;
+    min-height: 320px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+
+    @include media-max($pc) {
+      height: 48.8vw;
+    }
+    @include media-max($mobile) {
+      border-radius: 8px;
+    }
+
+    .swiper-pagination {
+      font-weight: 500;
+      padding: 7px 12px;
+      border-radius: 3px;
+      background-color: rgba(0, 0, 0, 0.9);
+      box-shadow: 0px 0px 5px 1px #fff;
+      min-width: 64px;
+      width: auto;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media-max($pcSmall) {
+        font-size: 14px;
+        min-width: 60px;
+      }
+      @include media-max($tablet) {
+        font-weight: 400;
+      }
+      @include media-max($mobile) {
+        font-size: 13px;
+        min-width: 50px;
+        padding: 6px 10px;
+      }
+      @include media-max($mobileSmall) {
+        font-size: 12px;
+        min-width: 46px;
+        padding: 5px 8px;
+      }
+    }
+  }
+
+  &__slide {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    height: 40px;
+    width: 24px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 5px 1px #fff;
+
+    svg {
+      height: 60%;
+      width: 60%;
+      object-fit: contain;
+    }
+
+    &--prev {
+      left: 15px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+    &--next {
+      right: 15px;
+      transform: translateY(-50%);
+    }
+
+    @include media-max($pcSmall) {
+      height: 36px;
+      width: 20px;
+      svg {
+        height: 56%;
+        width: 56%;
+      }
+      &--prev {
+        left: 12px;
+      }
+      &--next {
+        right: 12px;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      height: 34px;
+      &--prev {
+        left: 9px;
+      }
+      &--next {
+        right: 9px;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+
+    @media (any-hover: hover) {
+      transition: box-shadow $duration ease 0s;
+      svg path {
+        transition: fill $duration ease 0s;
+      }
+      &:hover {
+        box-shadow: 0px 0px 5px 1px var(--accent-primary);
+        svg {
+          path {
+            fill: var(--accent-primary);
+          }
+        }
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px 50px;
+  }
+
+  &__tech {
+    margin-right: auto;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+
+    @include media-max($mobileSmall) {
+      column-gap: 20px;
+    }
+  }
+
+  &__link-wrapper {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: math.div(17, 14);
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+      width: auto;
+      height: 20px;
+      max-width: 30px;
+      object-fit: contain;
+      margin-right: 7px;
+      path,
+      circle {
+        fill: var(--text-color);
+      }
+
+      @include media-max($mobile) {
+        height: 18px;
+      }
+      @include media-max($mobileSmall) {
+        height: 16px;
+        margin-right: 5px;
+      }
+    }
+
+    @media (any-hover: hover) {
+      transition: color $duration ease 0s;
+      svg {
+        path,
+        circle {
+          transition: fill $duration ease 0s;
+        }
+      }
+      &:hover {
+        color: var(--accent-primary);
+
+        svg {
+          path,
+          circle {
+            fill: var(--accent-primary);
+          }
+        }
+      }
+    }
+
+    @include media-max($mobile) {
+      font-weight: 400;
+    }
+    @include media-max($mobileSmall) {
+      font-size: 13px;
+    }
+  }
+}
+
+//========================================================================================================================================================
+.proj-preview-tech {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+
+  &__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    line-height: math.div(17, 14);
+
+    @include media-max($mobile) {
+      font-weight: 400;
+    }
+    @include media-max($mobileSmall) {
+      font-size: 13px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  &__item {
+    width: 20px;
+    height: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    @include media-max($mobile) {
+      width: 18px;
+      height: 18px;
+    }
+    @include media-max($mobileSmall) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+//========================================================================================================================================================
+.proj-info {
+  &__section {
+    & + & {
+      margin-top: 15px;
+      @include media-min($mobile) {
+        margin-top: 20px;
+      }
+      @include media-min($tablet) {
+        margin-top: 22px;
+      }
+      @include media-min($pcSmall) {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: math.div(29, 24);
+    color: rgba(var(--accent-primary-rgb), 0.9);
+    border-bottom: 1px solid rgba(var(--accent-primary-rgb), 0.9);
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+
+    @include media-max($pcSmall) {
+      font-size: 22px;
+      margin-bottom: 13px;
+    }
+    @include media-max($tablet) {
+      font-size: 20px;
+    }
+    @include media-max($mobile) {
+      font-size: 18px;
+      margin-bottom: 11px;
+    }
+    @include media-max($mobileSmall) {
+      font-size: 16px;
+    }
+  }
+
+  &__description {
+    p + p {
+      margin-top: 6px;
+      @include media-min($pcSmall) {
+        margin-top: 7px;
+      }
+    }
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    display: flex;
+    & + & {
+      margin-top: 8px;
+    }
+
+    span {
+      font-weight: 500;
+    }
+
+    svg,
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      margin-right: 10px;
+
+      @include media-max($mobile) {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+      }
+      @include media-max($mobileSmall) {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+      }
+    }
+
+    svg {
+      path {
+        fill: var(--main-color);
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__button {
+    svg {
+      width: auto;
+      height: 20px;
+      max-width: 30px;
+      object-fit: contain;
+      position: relative;
+      top: -1px;
+      path,
+      circle {
+        fill: var(--text-color);
+        transition: fill $duration ease 0s;
+      }
+
+      @include media-max($mobile) {
+        height: 18px;
+        top: unset;
+      }
+
+      @include media-max($mobileSmall) {
+        height: 16px;
+      }
+    }
+
+    @media (any-hover: hover) {
+      [data-theme='light'] &:not(._primary):hover {
+        svg {
+          path,
+          circle {
+            fill: var(--accent-primary);
+          }
+        }
+      }
+    }
+
+    &._primary {
+      svg {
+        path,
+        circle {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

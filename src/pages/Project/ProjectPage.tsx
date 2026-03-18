@@ -1,0 +1,197 @@
+import { useLocation } from 'react-router';
+import { useTranslation } from 'react-i18next';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation, EffectFade } from 'swiper/modules';
+import { useData, useTheme } from '@/providers';
+import { currentOrDefaultLang } from '@/utils';
+import { Arrow, GitHubSvg, ViewSvg } from '@/components';
+
+import 'swiper/scss';
+import 'swiper/scss/pagination';
+import 'swiper/scss/navigation';
+import 'swiper/scss/effect-fade';
+import './ProjectPage.scss';
+
+function Project() {
+  const { theme } = useTheme();
+  const { projects, technologies } = useData();
+  const { t, i18n } = useTranslation('project');
+  
+  const location = useLocation();
+  const slug = location.pathname
+    .replace('/project', '')
+    .split('/')
+    .filter(Boolean)
+    .map(decodeURIComponent)[0];
+
+  const proj = projects.find((proj) => proj.slug === slug);
+  if (!proj) return null;
+
+  const projI18n = proj.i18n[currentOrDefaultLang(i18n.resolvedLanguage)];
+
+  return (
+    <div className="project">
+      {/* === proj-header === */}
+      <div className="project__header proj-header">
+        <div className="container">
+          <div className="proj-header__body">
+            <p className="proj-header__sub-title">{projI18n.type}</p>
+            <h2 className="proj-header__title">{projI18n.title}</h2>
+          </div>
+        </div>
+      </div>
+
+      {/* === proj-preview === */}
+      <div className="project__preview proj-preview">
+        <div className="container">
+          <Swiper
+            className="proj-preview__slider"
+            modules={[Pagination, Navigation, EffectFade]}
+            spaceBetween={50}
+            effect="fade"
+            fadeEffect={{
+              crossFade: true,
+            }}
+            pagination={{ type: 'fraction' }}
+            navigation={{
+              prevEl: '.proj-preview__button--prev',
+              nextEl: '.proj-preview__button--next',
+            }}
+            loop={true}>
+            {proj.images.map((img, i) => (
+              <SwiperSlide className="proj-preview__slide" key={img.pc}>
+                <img src={img.pc} alt={`Project Image #${i + 1}`} />
+              </SwiperSlide>
+            ))}
+            <button
+              type="button"
+              className="proj-preview__button proj-preview__button--prev"
+              aria-label="Prev slides">
+              <Arrow />
+            </button>
+            <button
+              type="button"
+              className="proj-preview__button proj-preview__button--next"
+              aria-label="Next slides">
+              <Arrow />
+            </button>
+          </Swiper>
+          <div className="proj-preview__info">
+            <div className="proj-preview__tech proj-preview-tech">
+              <p className="proj-preview-tech__text">{t('techStacks')}:</p>
+              <ul className="proj-preview-tech__list">
+                {proj.techStack.map((str) => {
+                  const tech = technologies[str];
+                  if (!tech) return null;
+
+                  return (
+                    <li className="proj-preview-tech__item" key={tech.id}>
+                      <img
+                        src={tech.icon.theme ? tech.icon.theme[theme] : tech.icon.default}
+                        alt={tech.title}
+                      />
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className="proj-preview__links">
+              <p className="proj-preview__link-wrapper">
+                <a href={proj.links.github} target="_blank" className="proj-preview__link">
+                  <GitHubSvg />
+                  {t('sourceCode')}
+                </a>
+              </p>
+              <p className="proj-preview__link-wrapper">
+                <a href={proj.links.liveDemo} target="_blank" className="proj-preview__link">
+                  <ViewSvg />
+                  {t('liveDemo')}
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* === proj-info === */}
+      <div className="project__info proj-info">
+        <div className="container">
+          {/* == About == */}
+          <div className="proj-info__section">
+            <h3 className="proj-info__title">{t('about')}</h3>
+            <div className="proj-info__description proj-text">
+              {projI18n.description.split('\n').map((str, i) => (
+                <p key={`${proj.slug} + ${i}`}>{str}</p>
+              ))}
+            </div>
+          </div>
+
+          {/* == Demonstrates == */}
+          <div className="proj-info__section">
+            <h3 className="proj-info__title">{t('demonstrates')}</h3>
+            <ul className="proj-info__list">
+              {projI18n.demonstrates.map((str, i) => (
+                <li className="proj-info__list-item proj-text" key={`${proj.slug} + ${i}`}>
+                  🎯{str}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* == Features == */}
+          <div className="proj-info__section">
+            <h3 className="proj-info__title">{t('features')}</h3>
+            <ul className="proj-info__list proj-info__list--features">
+              {projI18n.features.map((feature) => (
+                <li className="proj-info__list-item proj-text" key={feature.id}>
+                  {feature.emoji} {feature.title}
+                  {/* <span>
+                    {feature.emoji} {feature.title}.
+                  </span>{' '}
+                  {feature.description}. */}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* == Technologies == */}
+          <div className="proj-info__section">
+            <h3 className="proj-info__title">{t('technologies')}</h3>
+            <ul className="proj-info__list">
+              {proj.technologies.map((str) => {
+                const tech = technologies[str];
+                if (!tech) return null;
+
+                return (
+                  <li className="proj-info__list-item proj-text" key={tech.id}>
+                    <img
+                      src={tech.icon.theme ? tech.icon.theme[theme] : tech.icon.default}
+                      alt={tech.title}
+                      aria-hidden
+                    />
+                    {tech.title}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
+          {/* == Technologies == */}
+          <div className="proj-info__section">
+            <h3 className="proj-info__title">{t('links')}</h3>
+            <div className="proj-info__buttons">
+              <a className="proj-info__button btn _primary" href={proj.links.liveDemo}>
+                <ViewSvg /> Смотреть демо
+              </a>
+              <a className="proj-info__button btn" href={proj.links.github}>
+                <GitHubSvg /> GitHub репозиторий
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Project;

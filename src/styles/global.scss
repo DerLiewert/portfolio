@@ -1,0 +1,59 @@
+@use './index' as *;
+@use './root';
+@use './null';
+@use './common';
+
+#root,
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#root {
+  align-items: stretch;
+}
+
+.theme-transition * {
+  transition: all 0s ease 0s !important;
+}
+
+html {
+  // scroll-behavior: smooth;
+}
+
+body {
+  .menu-open & {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  @supports (overflow: clip) {
+    overflow: clip;
+  }
+  // Притискаємо footer
+  > main {
+    flex: 1 1 auto;
+  }
+  // Фікс для слайдерів
+  > * {
+    min-width: 0;
+  }
+}
+
+// Обмежуючий контейнер ======================================================================================================================================================================================================================
+
+.container {
+  max-width: $containerWidth + px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  @media (min-width: $mobile) {
+    padding: 0 math.div($containerPadding, 2) + px;
+  }
+}

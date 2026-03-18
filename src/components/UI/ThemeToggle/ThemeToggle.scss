@@ -1,0 +1,105 @@
+@use '@/styles/index' as *;
+
+.theme {
+  position: relative;
+  display: flex;
+  gap: 6px;
+  border-radius: 14px;
+  background-color: var(--toggle-theme-bg);
+  padding: 1px;
+  box-shadow: inset 0px 1px 6px 0px rgba(0, 0, 0, 0.35);
+
+  &::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--toggle-theme-switcher);
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    transition:
+      right 0.5s ease 0s,
+      transform 0.5s ease 0s;
+
+    [data-theme='light'] & {
+      right: 100%;
+      transform: translateX(calc(100% + 1px));
+    }
+
+    @include media-max($tablet) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @include media-max($mobileSmall) {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition:
+      background-color $duration ease 0s,
+      opacity $duration ease 0s;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    &--light {
+      svg path {
+        transition: fill $duration ease 0s;
+        fill: var(--text-color);
+      }
+    }
+    &--dark {
+      svg path {
+        transition: stroke $duration ease 0s;
+        stroke: var(--text-color);
+      }
+    }
+
+    &--light {
+      opacity: 0.7;
+    }
+    &--dark {
+      opacity: 1;
+    }
+
+    [data-theme='light'] &--dark {
+      opacity: 0.7;
+    }
+    [data-theme='light'] &--light {
+      opacity: 1;
+    }
+
+    @include media-max($tablet) {
+      width: 24px;
+      height: 24px;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    @include media-max($mobileSmall) {
+      width: 20px;
+      height: 20px;
+      svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
