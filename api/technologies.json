@@ -1,0 +1,143 @@
+{
+  "html": {
+    "id": "html",
+    "title": "HTML5",
+    "icon": {
+      "default": "images/technologies/html.svg"
+    }
+  },
+  "css-scss": {
+    "id": "css-scss",
+    "title": "CSS3 / SCSS",
+    "icon": {
+      "default": "images/technologies/sass.svg"
+    }
+  },
+  "js": {
+    "id": "js",
+    "title": "JavaScript",
+    "icon": {
+      "default": "images/technologies/js.svg"
+    }
+  },
+  "react": {
+    "id": "react",
+    "title": "React",
+    "icon": {
+      "default": "images/technologies/react.svg"
+    }
+  },
+  "redux": {
+    "id": "redux",
+    "title": "Redux Toolkit",
+    "icon": {
+      "default": "images/technologies/redux.svg"
+    }
+  },
+  "ts": {
+    "id": "ts",
+    "title": "TypeScript",
+    "icon": {
+      "default": "images/technologies/typescript.svg"
+    }
+  },
+  "react-router": {
+    "id": "react-router",
+    "title": "React Router",
+    "icon": {
+      "default": "images/technologies/react-router-for-dark-theme.svg",
+      "theme": {
+        "dark": "images/technologies/react-router-for-dark-theme.svg",
+        "light": "images/technologies/react-router-for-light-theme.svg"
+      }
+    }
+  },
+  "axios": {
+    "id": "axios",
+    "title": "Axios",
+    "icon": {
+      "default": "images/technologies/axios-for-dark-theme.svg",
+      "theme": {
+        "dark": "images/technologies/axios-for-dark-theme.svg",
+        "light": "images/technologies/axios-for-light-theme.svg"
+      }
+    }
+  },
+  "swiper": {
+    "id": "swiper",
+    "title": "Swiper",
+    "icon": {
+      "default": "images/technologies/swiper.svg"
+    }
+  },
+  "lightgallery": {
+    "id": "lightgallery",
+    "title": "LightGallery",
+    "icon": {
+      "default": "images/technologies/light-gallery.svg"
+    }
+  },
+  "leaflet": {
+    "id": "leaflet",
+    "title": "Leaflet",
+    "icon": {
+      "default": "images/technologies/leafletjs.svg"
+    }
+  },
+  "chart-js": {
+    "id": "chart-js",
+    "title": "Chart.Js",
+    "icon": {
+      "default": "images/technologies/chart-js.svg"
+    }
+  },
+  "react-select": {
+    "id": "react-select",
+    "title": "React Select",
+    "icon": {
+      "default": "images/technologies/tool.svg"
+    }
+  },
+  "gsap": {
+    "id": "gsap",
+    "title": "GSAP",
+    "icon": {
+      "default": "images/technologies/gsap.svg"
+    }
+  },
+  "scroll-trigger": {
+    "id": "scroll-trigger",
+    "title": "GSAP / ScrollTrigger",
+    "icon": {
+      "default": "images/technologies/gsap.svg"
+    }
+  },
+  "jikan-api": {
+    "id": "jikan-api",
+    "title": "Jikan API",
+    "icon": {
+      "default": "images/technologies/api.svg"
+    }
+  },
+  "youtube-api": {
+    "id": "youtube-api",
+    "title": "YouTube Data API",
+    "icon": {
+      "default": "images/technologies/api.svg"
+    }
+  },
+  "tooltip": {
+    "id": "tooltip",
+    "title": "Tooltip logic",
+    "icon": {
+      "default": "images/technologies/tool.svg"
+    }
+  },
+  "intersection-observer": {
+    "id": "intersection-observer",
+    "title": "IntersectionObserver API",
+    "icon": {
+      "default": "images/technologies/tool.svg"
+    }
+  }
+}
