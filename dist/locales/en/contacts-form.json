@@ -1,0 +1,19 @@
+{
+  "contacts": {
+    "title": "Let’s <span>build</span> something <span>together</span>",
+    "text": "I’m open to frontend opportunities, freelance work, and collaborations. If you like my projects — feel free to reach out.",
+    "socials": "Social Networks"
+  },
+  "form": {
+    "name": "Name",
+    "gmail": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "namePlaceholder": "Your name",
+    "subjectPlaceholder": "Job opportunity / Project inquiry",
+    "messagePlaceholder": "Tell me how I can help you...",
+    "send": "Send",
+    "success": "✅ Message sent! You’ll receive a reply soon😉",
+    "error": "⛔ Message failed to send! Something went wrong😥"
+  }
+}
