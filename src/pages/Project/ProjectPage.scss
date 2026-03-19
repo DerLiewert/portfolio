@@ -121,7 +121,7 @@
 .proj-preview {
   &__slider {
     height: 720px;
-    min-height: 320px;
+    min-height: 380px;
     border: 1px solid var(--border-color);
     border-radius: 10px;
     margin-bottom: 10px;
@@ -130,8 +130,14 @@
     @include media-max($pc) {
       height: 48.8vw;
     }
+    @media (max-height: 750px) and (min-width: 1300px) {
+      height: calc(720px - var(--header-height));
+    }
     @include media-max($mobile) {
       border-radius: 8px;
+    }
+    @include media-max($mobileSmall) {
+      min-height: 340px;
     }
 
     .swiper-pagination {
@@ -170,6 +176,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: top center;
     }
   }
 

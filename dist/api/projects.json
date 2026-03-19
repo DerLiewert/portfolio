@@ -4,28 +4,28 @@
     "slug": "bright-light",
     "preview": {
       "pc": "images/projects/bright-light/intro.jpg",
-      "mobile": "images/projects/bright-light/intro.jpg"
+      "mobile": "images/projects/bright-light/intro-mobile.jpg"
     },
     "images": [
       {
         "pc": "images/projects/bright-light/intro.jpg",
-        "mobile": "images/projects/bright-light/intro.jpg"
+        "mobile": "images/projects/bright-light/intro-mobile.jpg"
       },
       {
         "pc": "images/projects/bright-light/idk.jpg",
-        "mobile": "images/projects/bright-light/idk.jpg"
+        "mobile": "images/projects/bright-light/idk-mobile.jpg"
       },
       {
         "pc": "images/projects/bright-light/traks.jpg",
-        "mobile": "images/projects/bright-light/traks.jpg"
+        "mobile": "images/projects/bright-light/traks-mobile.jpg"
       },
       {
         "pc": "images/projects/bright-light/gallery.jpg",
-        "mobile": "images/projects/bright-light/gallery.jpg"
+        "mobile": "images/projects/bright-light/gallery-mobile.jpg"
       },
       {
         "pc": "images/projects/bright-light/gallery-popup.jpg",
-        "mobile": "images/projects/bright-light/gallery-popup.jpg"
+        "mobile": "images/projects/bright-light/gallery-popup-mobile.jpg"
       }
     ],
     "links": {
@@ -198,7 +198,7 @@
     "slug": "la-design",
     "preview": {
       "pc": "images/projects/la-design/intro.jpg",
-      "mobile": "images/projects/la-design/intro.jpg"
+      "mobile": "images/projects/la-design/intro-mobile.jpg"
     },
     "images": [
       {
@@ -207,28 +207,32 @@
       },
       {
         "pc": "images/projects/la-design/portfolio.jpg",
-        "mobile": "images/projects/la-design/portfolio.jpg"
+        "mobile": "images/projects/la-design/portfolio-mobile.jpg"
       },
       {
         "pc": "images/projects/la-design/price.jpg",
-        "mobile": "images/projects/la-design/price.jpg"
+        "mobile": "images/projects/la-design/price-mobile.jpg"
       },
       {
         "pc": "images/projects/la-design/project.jpg",
-        "mobile": "images/projects/la-design/project.jpg"
+        "mobile": "images/projects/la-design/project-mobile.jpg"
+      },
+      {
+        "pc": "images/projects/la-design/project-2.jpg",
+        "mobile": "images/projects/la-design/project-2-mobile.jpg"
       },
       {
         "pc": "images/projects/la-design/contacts.jpg",
-        "mobile": "images/projects/la-design/contacts.jpg"
+        "mobile": "images/projects/la-design/contacts-mobile.jpg"
       },
       {
         "pc": "images/projects/la-design/popup.jpg",
-        "mobile": "images/projects/la-design/popup.jpg"
+        "mobile": "images/projects/la-design/popup-mobile.jpg"
       }
     ],
     "links": {
       "github": "https://github.com/DerLiewert/la-design-practice",
-      "liveDemo": "https://github.com/DerLiewert/la-design-practice"
+      "liveDemo": "https://derliewert.github.io/la-design-practice/"
     },
 
     "i18n": {
@@ -477,16 +481,16 @@
     "slug": "nura-elite",
     "preview": {
       "pc": "images/projects/nura-elite/intro.jpg",
-      "mobile": "images/projects/nura-elite/intro.jpg"
+      "mobile": "images/projects/nura-elite/intro-mobile.jpg"
     },
     "images": [
       {
         "pc": "images/projects/nura-elite/intro.jpg",
-        "mobile": "images/projects/nura-elite/intro.jpg"
+        "mobile": "images/projects/nura-elite/intro-mobile.jpg"
       },
       {
         "pc": "images/projects/nura-elite/about.jpg",
-        "mobile": "images/projects/nura-elite/about.jpg"
+        "mobile": "images/projects/nura-elite/about-mobile.jpg"
       },
       {
         "pc": "images/projects/nura-elite/gallery.jpg",
@@ -494,11 +498,11 @@
       },
       {
         "pc": "images/projects/nura-elite/map.jpg",
-        "mobile": "images/projects/nura-elite/map.jpg"
+        "mobile": "images/projects/nura-elite/map-mobile.jpg"
       },
       {
         "pc": "images/projects/nura-elite/columns.jpg",
-        "mobile": "images/projects/nura-elite/columns.jpg"
+        "mobile": "images/projects/nura-elite/columns-mobile.jpg"
       }
     ],
     "links": {
@@ -659,36 +663,36 @@
     "slug": "obogrev-lux",
     "preview": {
       "pc": "images/projects/obogrev-lux/product.jpg",
-      "mobile": "images/projects/obogrev-lux/product.jpg"
+      "mobile": "images/projects/obogrev-lux/product-mobile.jpg"
     },
     "images": [
       {
         "pc": "images/projects/obogrev-lux/product.jpg",
-        "mobile": "images/projects/obogrev-lux/product.jpg"
+        "mobile": "images/projects/obogrev-lux/product-mobile.jpg"
       },
       {
         "pc": "images/projects/obogrev-lux/product-2.jpg",
-        "mobile": "images/projects/obogrev-lux/product-2.jpg"
+        "mobile": "images/projects/obogrev-lux/product-2-mobile.jpg"
       },
       {
         "pc": "images/projects/obogrev-lux/header.jpg",
-        "mobile": "images/projects/obogrev-lux/header.jpg"
+        "mobile": "images/projects/obogrev-lux/header-mobile.jpg"
       },
       {
         "pc": "images/projects/obogrev-lux/slider.jpg",
-        "mobile": "images/projects/obogrev-lux/slider.jpg"
+        "mobile": "images/projects/obogrev-lux/slider-mobile.jpg"
       },
       {
         "pc": "images/projects/obogrev-lux/catalog.jpg",
-        "mobile": "images/projects/obogrev-lux/catalog.jpg"
+        "mobile": "images/projects/obogrev-lux/catalog-mobile.jpg"
       },
       {
         "pc": "images/projects/obogrev-lux/catalog-2.jpg",
-        "mobile": "images/projects/obogrev-lux/catalog-2.jpg"
+        "mobile": "images/projects/obogrev-lux/catalog-2-mobile.jpg"
       },
       {
         "pc": "images/projects/obogrev-lux/tab.jpg",
-        "mobile": "images/projects/obogrev-lux/tab.jpg"
+        "mobile": "images/projects/obogrev-lux/tab-mobile.jpg"
       }
     ],
     "links": {
@@ -995,16 +999,16 @@
     "slug": "reton",
     "preview": {
       "pc": "images/projects/reton/company-map.jpg",
-      "mobile": "images/projects/reton/company-map.jpg"
+      "mobile": "images/projects/reton/company-map-mobile.jpg"
     },
     "images": [
       {
         "pc": "images/projects/reton/company-map.jpg",
-        "mobile": "images/projects/reton/company-map.jpg"
+        "mobile": "images/projects/reton/company-map-mobile.jpg"
       },
       {
         "pc": "images/projects/reton/about.jpg",
-        "mobile": "images/projects/reton/about.jpg"
+        "mobile": "images/projects/reton/about-mobile.jpg"
       },
       {
         "pc": "images/projects/reton/toggle.jpg",
@@ -1012,11 +1016,11 @@
       },
       {
         "pc": "images/projects/reton/country-map.jpg",
-        "mobile": "images/projects/reton/country-map.jpg"
+        "mobile": "images/projects/reton/country-map-mobile.jpg"
       },
       {
         "pc": "images/projects/reton/faq.jpg",
-        "mobile": "images/projects/reton/faq.jpg"
+        "mobile": "images/projects/reton/faq-mobile.jpg"
       }
     ],
     "links": {
@@ -1279,28 +1283,28 @@
     "slug": "bank-hotel",
     "preview": {
       "pc": "images/projects/bank-hotel/intro.jpg",
-      "mobile": "images/projects/bank-hotel/intro.jpg"
+      "mobile": "images/projects/bank-hotel/intro-mobile.jpg"
     },
     "images": [
       {
         "pc": "images/projects/bank-hotel/intro.jpg",
-        "mobile": "images/projects/bank-hotel/intro.jpg"
+        "mobile": "images/projects/bank-hotel/intro-mobile.jpg"
       },
       {
         "pc": "images/projects/bank-hotel/gallery.jpg",
-        "mobile": "images/projects/bank-hotel/gallery.jpg"
+        "mobile": "images/projects/bank-hotel/gallery-mobile.jpg"
       },
       {
         "pc": "images/projects/bank-hotel/accordion.jpg",
-        "mobile": "images/projects/bank-hotel/accordion.jpg"
+        "mobile": "images/projects/bank-hotel/accordion-mobile.jpg"
       },
       {
         "pc": "images/projects/bank-hotel/rooms.jpg",
-        "mobile": "images/projects/bank-hotel/rooms.jpg"
+        "mobile": "images/projects/bank-hotel/rooms-mobile.jpg"
       },
       {
         "pc": "images/projects/bank-hotel/popup.jpg",
-        "mobile": "images/projects/bank-hotel/popup.jpg"
+        "mobile": "images/projects/bank-hotel/popup-mobile.jpg"
       }
     ],
 
@@ -1522,20 +1526,20 @@
     "slug": "shenya-anime",
     "preview": {
       "pc": "images/projects/shenya-anime/main.jpg",
-      "mobile": "images/projects/shenya-anime/main.jpg"
+      "mobile": "images/projects/shenya-anime/main-mobile.jpg"
     },
     "images": [
       {
         "pc": "images/projects/shenya-anime/main.jpg",
-        "mobile": "images/projects/shenya-anime/main.jpg"
+        "mobile": "images/projects/shenya-anime/main-mobile.jpg"
       },
       {
         "pc": "images/projects/shenya-anime/catalog.jpg",
-        "mobile": "images/projects/shenya-anime/catalog.jpg"
+        "mobile": "images/projects/shenya-anime/catalog-mobile.jpg"
       },
       {
         "pc": "images/projects/shenya-anime/full-page.jpg",
-        "mobile": "images/projects/shenya-anime/full-page.jpg"
+        "mobile": "images/projects/shenya-anime/full-page-mobile.jpg"
       },
       {
         "pc": "images/projects/shenya-anime/gallery.jpg",
@@ -1543,11 +1547,11 @@
       },
       {
         "pc": "images/projects/shenya-anime/schedules.jpg",
-        "mobile": "images/projects/shenya-anime/schedules.jpg"
+        "mobile": "images/projects/shenya-anime/schedules-mobile.jpg"
       },
       {
         "pc": "images/projects/shenya-anime/search.jpg",
-        "mobile": "images/projects/shenya-anime/search.jpg"
+        "mobile": "images/projects/shenya-anime/search-mobile.jpg"
       }
     ],
     "links": {

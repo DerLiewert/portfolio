@@ -11,12 +11,14 @@ import 'swiper/scss/pagination';
 import 'swiper/scss/navigation';
 import 'swiper/scss/effect-fade';
 import './ProjectPage.scss';
+import { useMatchMedia } from '@/hooks';
 
 function Project() {
   const { theme } = useTheme();
   const { projects, technologies } = useData();
   const { t, i18n } = useTranslation('project');
-  
+  const isMobile = useMatchMedia('max', 600);
+
   const location = useLocation();
   const slug = location.pathname
     .replace('/project', '')
@@ -60,7 +62,10 @@ function Project() {
             loop={true}>
             {proj.images.map((img, i) => (
               <SwiperSlide className="proj-preview__slide" key={img.pc}>
-                <img src={img.pc} alt={`Project Image #${i + 1}`} />
+                <img
+                  src={isMobile ? (img.mobile ? img.mobile : img.pc) : img.pc}
+                  alt={`Project Image #${i + 1}`}
+                />
               </SwiperSlide>
             ))}
             <button
