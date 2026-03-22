@@ -33,9 +33,8 @@ export interface ProjectI18nLangData {
   features: {
     id: number;
     emoji: string;
-    title: string;
-    description: string | null;
-    details: string[];
+    text: string;
   }[];
   demonstrates: string[];
+  challenges: string[];
 }

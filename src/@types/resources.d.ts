@@ -56,6 +56,7 @@ interface Resources {
   },
   "project": {
     "about": "About",
+    "challenges": "Сhallenges",
     "copy": "The project was created for educational and practical purposes and is intended to demonstrate frontend development skills in a portfolio",
     "demonstrates": "What does the project demonstrate?",
     "features": "Features",

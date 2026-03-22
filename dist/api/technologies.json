@@ -139,5 +139,12 @@
     "icon": {
       "default": "images/technologies/tool.svg"
     }
+  },
+  "html-audio-api": {
+    "id": "html-audio-api",
+    "title": "HTML5 Audio API",
+    "icon": {
+      "default": "images/technologies/tool.svg"
+    }
   }
 }

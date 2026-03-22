@@ -32,165 +32,145 @@
       "github": "https://github.com/DerLiewert/bright-light",
       "liveDemo": "https://derliewert.github.io/bright-light/"
     },
-
     "i18n": {
       "en": {
         "title": "Bright Light",
         "type": "Landing page",
-        "description": "Bright Light is a single-page responsive landing page dedicated to a music artist, with a strong focus on media content and intuitive navigation. The project aims to present key information about the artist, showcase recent releases and media materials, and provide quick access to music and contact details.",
+        "description": "Bright Light is a responsive landing page for a music artist, focused on media content and user interaction flows.\nThe project emphasizes intuitive navigation, in-page audio playback, and consistent behavior across different devices.",
         "features": [
           {
             "id": 1,
             "emoji": "🧭",
-            "title": "Page navigation",
-            "description": "Fixed anchor menu in the header with smooth scrolling between sections",
-            "details": []
+            "text": "Smooth scroll navigation with a fixed header"
           },
           {
             "id": 2,
             "emoji": "🎧",
-            "title": "Audio player",
-            "description": "Custom-built HTML5 Audio player for playing tracks directly on the page",
-            "details": [
-              "The player displays playback progress and controls: play / pause and timecode",
-              "A 00:00–00:00 time placeholder is shown and updates when playback starts",
-              "In the “Last tracks” section, the next track starts automatically after the current one ends"
-            ]
+            "text": "Custom audio player built with the HTML5 Audio API"
           },
           {
             "id": 3,
             "emoji": "🖼️",
-            "title": "Interactive image gallery",
-            "description": null,
-            "details": []
+            "text": "Interactive image gallery"
           },
           {
             "id": 4,
             "emoji": "🎞️",
-            "title": "Slider",
-            "description": "Interactive slider with swipe support and mobile-friendly behavior",
-            "details": []
+            "text": "Responsive slider with swipe support"
           },
           {
             "id": 5,
             "emoji": "📱",
-            "title": "Responsive design",
-            "description": "All components, including the gallery and audio player, are adapted for different screen sizes while maintaining usability",
-            "details": []
+            "text": "Fully responsive interface"
           }
         ],
         "demonstrates": [
-          "UX-focused page navigation",
-          "Custom audio player implementation",
-          "Responsive layout for multiple devices (desktop, tablet, mobile)"
+          "Designing UX navigation for a single-page website",
+          "Building a custom audio player",
+          "Working with DOM, events, and UI state",
+          "Implementing interactive UI components",
+          "Responsive and cross-browser layout development"
+        ],
+        "challenges": [
+          "Built a custom audio player with synchronized UI and Audio API state (play/pause, progress, timing)",
+          "Handled playback timing by implementing dynamic updates for current time and track duration",
+          "Implemented sequential playback (next track) to ensure a seamless listening experience",
+          "Maintained UI-state synchronization during track switching and user interactions"
         ]
       },
       "uk": {
         "title": "Bright Light",
-        "type": "Лендинг",
-        "description": "Bright Light — односторінковий адаптивний лендинг, присвячений музичному виконавцю з акцентом на медіа-контент та зручну навігацію. \nМета проєкту — представити ключову інформацію про артиста, показати актуальні релізи й медіа-матеріали, а також забезпечити швидкий доступ до музики та контактів.",
+        "type": "Лендінг",
+        "description": "Bright Light — адаптивний лендінг музичного виконавця з акцентом на медіаконтент і користувацькі сценарії взаємодії.\nПроєкт сфокусований на зручній навігації, відтворенні аудіо безпосередньо на сторінці та стабільній роботі інтерфейсу на різних пристроях.",
         "features": [
           {
             "id": 1,
             "emoji": "🧭",
-            "title": "Навігація по сторінці",
-            "description": "Фіксоване якірне меню в шапці з плавним скролом між секціями",
-            "details": []
+            "text": "Плавна scroll-навігація з фіксованим меню"
           },
           {
             "id": 2,
             "emoji": "🎧",
-            "title": "Аудіоплеєр",
-            "description": "Кастомна реалізація плеєра на базі HTML5 Audio для відтворення треку безпосередньо на сторінці",
-            "details": [
-              "Плеєр відображає прогрес відтворення та елементи керування: відтворення / пауза, тайм-код",
-              "Передбачено плейсхолдер часу 00:00–00:00, який оновлюється після запуску треку",
-              "У блоці «Last tracks» після завершення одного треку автоматично запускається наступний"
-            ]
+            "text": "Кастомний аудіоплеєр на базі HTML5 Audio API"
           },
           {
             "id": 3,
             "emoji": "🖼️",
-            "title": "Інтерактивна галерея зображень",
-            "description": null,
-            "details": []
+            "text": "Інтерактивна галерея зображень"
           },
           {
             "id": 4,
             "emoji": "🎞️",
-            "title": "Слайдер",
-            "description": "Інтерактивний слайдер із підтримкою свайпів та адаптацією під мобільні пристрої",
-            "details": []
+            "text": "Адаптивний слайдер із підтримкою свайпів"
           },
           {
             "id": 5,
             "emoji": "📱",
-            "title": "Адаптивність",
-            "description": "Усі компоненти, включно з галереєю та плеєром, адаптовані під різні роздільні здатності збереженням зручності використання",
-            "details": []
+            "text": "Повністю адаптивний інтерфейс"
           }
         ],
         "demonstrates": [
-          "UX-орієнтовану навігацію по сторінці",
-          "Кастомний аудіоплеєр",
-          "Адаптивну верстку для різних пристроїв (десктоп, планшет, мобільний)"
+          "Проєктування UX-навігації односторінкового сайту",
+          "Реалізацію кастомного аудіоплеєра",
+          "Роботу з DOM, подіями та станом UI",
+          "Реалізацію інтерактивних UI-компонентів",
+          "Адаптивну та кросбраузерну верстку"
+        ],
+        "challenges": [
+          "Реалізація кастомного аудіоплеєра: налаштував керування відтворенням (play/pause, прогрес, таймінг) із синхронізацією UI та стану Audio API",
+          "Обробка часу відтворення: реалізував динамічне відображення поточного часу та тривалості треку",
+          "Автопрогравання треків: налаштував послідовне відтворення списку (next track) без розриву UX",
+          "Синхронізація UI і стану: забезпечив коректне оновлення інтерфейсу при перемиканні треків і взаємодії користувача"
         ]
       },
       "ru": {
         "title": "Bright Light",
         "type": "Лендинг",
-        "description": "Bright Light — одностраничный адаптивный лендинг, посвящённый музыкальному исполнителю с акцентом на медиа-контент и удобную навигацию. \nЦель проекта — представить основную информацию об артисте, показать актуальные релизы, медиа-контент, а также обеспечить быстрый доступ к музыке и контактам.",
+        "description": "Bright Light — адаптивный лендинг музыкального исполнителя с акцентом на медиа-контент и пользовательские сценарии взаимодействия.\nПроект сфокусирован на удобной навигации, воспроизведении аудио прямо на странице и корректной работе интерфейса на разных устройствах.",
         "features": [
           {
             "id": 1,
             "emoji": "🧭",
-            "title": "Навигация по странице",
-            "description": "Фиксированное якорное меню в шапке с плавным скроллом между секциями",
-            "details": []
+            "text": "Плавная scroll-навигация с фиксированным меню"
           },
           {
             "id": 2,
             "emoji": "🎧",
-            "title": "Аудио-плеер",
-            "description": "Кастомная реализация плеера на базе HTML5 Audio для воспроизведения трека прямо на странице",
-            "details": [
-              "Плеер отображает прогресс воспроизведения и элементы управления: старт / пауза, тайм-код",
-              "Предусмотрен плейсхолдер времени 00:00–00:00, который обновляется при запуске трека",
-              "В блоке «Last tracks» после окончания одного трека автоматически запускается следующий"
-            ]
+            "text": "Кастомный аудиоплеер на базе HTML5 Audio API"
           },
           {
             "id": 3,
             "emoji": "🖼️",
-            "title": "Интерактивная галерея изображений",
-            "description": null,
-            "details": []
+            "text": "Интерактивная галерея изображений"
           },
           {
             "id": 4,
             "emoji": "🎞️",
-            "title": "Слайдер",
-            "description": "Интерактивный слайдер с поддержкой свайпов и адаптацией под мобильные устройства",
-            "details": []
+            "text": "Адаптивный слайдер с поддержкой свайпов"
           },
           {
             "id": 5,
             "emoji": "📱",
-            "title": "Адаптивность",
-            "description": "Все компоненты, включая галерею и плеер, адаптированы под разные разрешения с сохранением удобства использования",
-            "details": []
+            "text": "Полностью адаптивный интерфейс"
           }
         ],
         "demonstrates": [
-          "UX-ориентированную навигацию по странице",
-          "Кастомный аудиоплеер",
-          "Адаптивную верстку под разные устройства (десктоп, планшет, мобильные)"
+          "Проектирование UX-навигации одностраничного сайта",
+          "Реализация кастомного аудиоплеера",
+          "Работа с DOM, событиями и состоянием UI",
+          "Реализация интерактивных UI-компонентов",
+          "Адаптивная и кроссбраузерная вёрстка"
+        ],
+        "challenges": [
+          "Реализация кастомного аудиоплеера: настроил управление воспроизведением (play/pause, прогресс, тайминг) с синхронизацией UI и состояния Audio API",
+          "Обработка времени воспроизведения: реализовал отображение текущего времени и длительности трека с динамическим обновлением",
+          "Реализация автопроигрывания треков: настроил последовательное воспроизведение списка (next track) без разрыва UX",
+          "Синхронизация UI и состояния: обеспечил корректное обновление интерфейса при переключении треков и взаимодействии пользователя"
         ]
       }
     },
-
     "techStack": ["css-scss", "js", "swiper", "lightgallery"],
-    "technologies": ["html", "css-scss", "js", "swiper", "lightgallery"]
+    "technologies": ["html", "css-scss", "js", "swiper", "lightgallery", "html-audio-api"]
   },
 
   {
@@ -234,244 +214,167 @@
       "github": "https://github.com/DerLiewert/la-design-practice",
       "liveDemo": "https://derliewert.github.io/la-design-practice/"
     },
-
     "i18n": {
       "en": {
         "title": "LA Design",
-        "type": "Catalog website",
-        "description": "LA Design is a multi-page catalog website for a design studio, focused on showcasing completed projects, services, and interaction with potential clients.\nThe project demonstrates work with interactive UI components, animations, content filtering, and user flows typical for commercial websites and studio portfolios.",
+        "type": "Catalog Website",
+        "description": "LA Design is a multi-page catalog website for a design studio, focused on showcasing projects, services, and user interaction with potential clients.\nThe project demonstrates working with complex page structure, interactive UI components, animations, and scenarios typical for commercial websites and studio portfolios.",
         "features": [
           {
             "id": 1,
             "emoji": "📖",
-            "title": "Multi-page website structure",
-            "description": "Pages include: home, portfolio, services, contacts, project page",
-            "details": []
+            "text": "Multi-page architecture (homepage, catalog, project page, services, contacts)"
           },
-          {
-            "id": 2,
-            "emoji": "📚",
-            "title": "Project catalog with category-based filtering",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 3,
-            "emoji": "🖼️",
-            "title": "Lazy loading of images via JavaScript",
-            "description": "Images are loaded only when needed to optimize performance and page load speed",
-            "details": []
-          },
+          { "id": 2, "emoji": "📚", "text": "Project catalog with category-based filtering" },
+          { "id": 3, "emoji": "🖼️", "text": "Lazy loading of images for optimized loading" },
           {
             "id": 4,
             "emoji": "🎥",
-            "title": "Subtle entrance animations on scroll",
-            "description": null,
-            "details": []
+            "text": "Lightweight animations on element appearance in viewport"
           },
-          {
-            "id": 5,
-            "emoji": "🗃️",
-            "title": "Expandable / collapsible content blocks (Accordion)",
-            "description": "Saves vertical space and improves content readability",
-            "details": []
-          },
-          {
-            "id": 6,
-            "emoji": "📨",
-            "title": "Popup with inquiry form",
-            "description": "Focused on the primary user call-to-action",
-            "details": []
-          },
-          {
-            "id": 7,
-            "emoji": "🖼️",
-            "title": "Project gallery",
-            "description": "Used on individual project pages for full-screen image viewing",
-            "details": []
-          },
-          {
-            "id": 8,
-            "emoji": "🎞️",
-            "title": "Image sliders and related projects",
-            "description": null,
-            "details": []
-          },
+          { "id": 5, "emoji": "🗃️", "text": "Accordion components for content management" },
+          { "id": 6, "emoji": "📨", "text": "Modal with contact form (CTA scenario)" },
+          { "id": 7, "emoji": "🖼️", "text": "Project gallery with fullscreen preview" },
+          { "id": 8, "emoji": "🎞️", "text": "Sliders with images and related projects" },
           {
             "id": 9,
             "emoji": "📱",
-            "title": "Responsive layout",
-            "description": "Consistent UX and animations across different devices",
-            "details": []
+            "text": "Fully responsive interface with preserved UX and animations"
           }
         ],
         "demonstrates": [
-          "Ability to build multi-page website structures",
-          "Implementation of interactive UI components",
-          "Understanding of UX logic for commercial websites and catalogs",
-          "Integration and configuration of third-party libraries",
-          "Image loading optimization techniques",
+          "Designing multi-page website architecture",
+          "Building interactive UI components",
+          "Understanding UX patterns for commercial websites and catalogs",
+          "Working with the DOM, events, and UI state",
+          "Integrating and configuring third-party libraries",
+          "Optimizing image loading",
           "Responsive and cross-browser layout"
+        ],
+        "challenges": [
+          "Multi-page structure design: built navigation and page relationships without losing UX context",
+          "Catalog filtering implementation: enabled category switching without page reload while maintaining smooth UI interaction",
+          "Image loading optimization: implemented lazy loading to reduce initial load and improve rendering performance",
+          "Animation handling: implemented viewport-based animations without performance issues",
+          "Modal and CTA integration: designed a clear user flow for submitting requests",
+          "Project gallery implementation: built fullscreen preview with intuitive image navigation"
         ]
       },
       "uk": {
         "title": "LA Design",
         "type": "Сайт-каталог",
-        "description": "LA Design — багатосторінковий сайт-каталог дизайн-студії, орієнтований на презентацію реалізованих проєктів, послуг та взаємодію з потенційними клієнтами.\nПроєкт демонструє роботу з інтерактивними UI-компонентами, анімаціями, фільтрацією контенту та користувацькими сценаріями, характерними для комерційних сайтів і студійних портфоліо.",
+        "description": "LA Design — багатосторінковий сайт-каталог дизайн-студії, орієнтований на презентацію проєктів, послуг та взаємодію з потенційними клієнтами.\nПроєкт демонструє роботу зі складною структурою сторінок, інтерактивними UI-компонентами, анімаціями та сценаріями, характерними для комерційних сайтів і студійних портфоліо.",
         "features": [
           {
             "id": 1,
             "emoji": "📖",
-            "title": "Багатосторінкова структура сайту",
-            "description": "Сторінки: головна, портфоліо, послуги, контакти, сторінка проєкту",
-            "details": []
+            "text": "Багатосторінкова архітектура (головна, каталог, сторінка проєкту, послуги, контакти)"
           },
-          {
-            "id": 2,
-            "emoji": "📚",
-            "title": "Каталог проєктів із сортуванням за категоріями",
-            "description": null,
-            "details": []
-          },
+          { "id": 2, "emoji": "📚", "text": "Каталог проєктів з фільтрацією за категоріями" },
           {
             "id": 3,
             "emoji": "🖼️",
-            "title": "Lazy loading зображень через JavaScript",
-            "description": "Завантаження контенту лише за потреби для оптимізації продуктивності та швидкості завантаження сторінок",
-            "details": []
+            "text": "Lazy loading зображень для оптимізації завантаження"
           },
-          {
-            "id": 4,
-            "emoji": "🎥",
-            "title": "Легкі анімації елементів при появі в зоні видимості",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 5,
-            "emoji": "🗃️",
-            "title": "Розкривні / згортальні блоки контенту (Accordion)",
-            "description": "Економія вертикального простору та покращення читабельності",
-            "details": []
-          },
-          {
-            "id": 6,
-            "emoji": "📨",
-            "title": "Попап із формою заявки",
-            "description": "Фокус на цільовій дії користувача",
-            "details": []
-          },
-          {
-            "id": 7,
-            "emoji": "🖼️",
-            "title": "Галерея проєкту",
-            "description": "Використовується на сторінці окремого проєкту для повноекранного перегляду зображень",
-            "details": []
-          },
-          {
-            "id": 8,
-            "emoji": "🎞️",
-            "title": "Слайдери зображень та схожих проєктів",
-            "description": null,
-            "details": []
-          },
+          { "id": 4, "emoji": "🎥", "text": "Легкі анімації появи елементів у viewport" },
+          { "id": 5, "emoji": "🗃️", "text": "Accordion-компоненти для керування контентом" },
+          { "id": 6, "emoji": "📨", "text": "Modal з формою заявки (CTA-сценарій)" },
+          { "id": 7, "emoji": "🖼️", "text": "Галерея проєкту з повноекранним переглядом" },
+          { "id": 8, "emoji": "🎞️", "text": "Слайдери з зображеннями та схожими проєктами" },
           {
             "id": 9,
             "emoji": "📱",
-            "title": "Адаптивна верстка",
-            "description": "Збереження UX та анімацій на різних пристроях",
-            "details": []
+            "text": "Повністю адаптивний інтерфейс зі збереженням UX та анімацій"
           }
         ],
         "demonstrates": [
-          "Вміння працювати з багатосторінковою структурою сайту",
+          "Проєктування багатосторінкової структури сайту",
           "Реалізацію інтерактивних UI-компонентів",
           "Розуміння UX-логіки комерційних сайтів і каталогів",
+          "Роботу з DOM, подіями та станом інтерфейсу",
           "Підключення та налаштування сторонніх бібліотек",
           "Оптимізацію завантаження зображень",
           "Адаптивну та кросбраузерну верстку"
+        ],
+        "challenges": [
+          "Організація багатосторінкової структури: вибудував навігацію та зв’язність сторінок без втрати UX-контексту",
+          "Реалізація фільтрації каталогу: реалізував перемикання категорій без перезавантаження сторінки зі збереженням плавності інтерфейсу",
+          "Оптимізація завантаження зображень: впровадив lazy loading, зменшивши початкове навантаження та прискоривши рендер сторінок",
+          "Робота з анімаціями: реалізував появу елементів у viewport без втрати продуктивності",
+          "Інтеграція modal і CTA-сценаріїв: вибудував зрозумілий шлях користувача до відправки заявки",
+          "Організація галереї проєкту: реалізував повноекранний перегляд і зручну навігацію по зображеннях"
         ]
       },
       "ru": {
         "title": "LA Design",
         "type": "Сайт-каталог",
-        "description": "LA Design — многостраничный сайт-каталог дизайн-студии, ориентированный на презентацию реализованных проектов, услуг и взаимодействие с потенциальными клиентами. \nПроект демонстрирует работу с интерактивными UI-компонентами, анимациями, фильтрацией контента и пользовательскими сценариями, характерными для коммерческих сайтов и студийных портфолио.",
+        "description": "LA Design — многостраничный сайт-каталог дизайн-студии, ориентированный на презентацию проектов, услуг и взаимодействие с потенциальными клиентами.\nПроект демонстрирует работу со сложной структурой страниц, интерактивными UI-компонентами, анимациями и сценариями, характерными для коммерческих сайтов и студийных портфолио.",
         "features": [
           {
             "id": 1,
             "emoji": "📖",
-            "title": "Многостраничная структура сайта",
-            "description": "Страницы: главная, портфолио, услуги, контакты, страница проекта",
-            "details": []
+            "text": "Многостраничная архитектура (главная, каталог, страница проекта, услуги, контакты)"
           },
           {
             "id": 2,
             "emoji": "📚",
-            "title": "Каталог проектов с сортировкой по категориям",
-            "description": null,
-            "details": []
+            "text": "Каталог проектов с фильтрацией по категориям"
           },
           {
             "id": 3,
             "emoji": "🖼️",
-            "title": "Lazy loading изображений через JavaScript",
-            "description": "Загрузка контента только при необходимости для оптимизация производительности и скорости загрузки страниц",
-            "details": []
+            "text": "Lazy loading изображений для оптимизации загрузки с помощью JavaScript"
           },
           {
             "id": 4,
             "emoji": "🎥",
-            "title": "Лёгкие анимации элементов при появлении в области видимости",
-            "description": null,
-            "details": []
+            "text": "Лёгкие анимации при появлении элементов в viewport"
           },
           {
             "id": 5,
             "emoji": "🗃️",
-            "title": "Раскрывающиеся / закрывающиеся блоки контента (Аккордеон)",
-            "description": "Экономия вертикального пространства и улучшение читаемости",
-            "details": []
+            "text": "Accordion-компоненты для управления контентом"
           },
           {
             "id": 6,
             "emoji": "📨",
-            "title": "Попап с формой заявки",
-            "description": "Фокус на целевом действии пользователя",
-            "details": []
+            "text": "Modal с формой заявки (call-to-action сценарий)"
           },
           {
             "id": 7,
             "emoji": "🖼️",
-            "title": "Галерея проекта ",
-            "description": "Используется на странице отдельного проекта для полноэкранного просмотра некоторых изображений",
-            "details": []
+            "text": "Галерея проекта с полноэкранным просмотром"
           },
           {
             "id": 8,
             "emoji": "🎞️",
-            "title": "Слайдеры с изображениями и похожими проектами",
-            "description": null,
-            "details": []
+            "text": "Слайдеры с изображениями и похожими проектами"
           },
           {
             "id": 9,
             "emoji": "📱",
-            "title": "Адаптивная верстка",
-            "description": "Сохранение UX и анимаций на разных устройствах",
-            "details": []
+            "text": "Полностью адаптивный интерфейс с сохранением UX и анимаций"
           }
         ],
         "demonstrates": [
-          "Умение работать с многостраничной структурой сайта",
+          "Проектирование многостраничной структуры сайта",
           "Реализацию интерактивных UI-компонентов",
           "Понимание UX-логики коммерческих сайтов и каталогов",
+          "Работу с DOM, событиями и состоянием интерфейса",
           "Подключение и настройку сторонних библиотек",
           "Оптимизацию загрузки изображений",
           "Адаптивную и кроссбраузерную вёрстку"
+        ],
+        "challenges": [
+          "Организация многостраничной структуры: выстроил навигацию и связность страниц без потери UX-контекста",
+          "Реализация фильтрации каталога: сделал переключение категорий без перезагрузки страницы и с сохранением отзывчивости интерфейса",
+          "Оптимизация загрузки изображений: внедрил lazy loading, снизив начальную нагрузку и ускорив рендер страниц",
+          "Работа с анимациями: реализовал появление элементов в viewport без просадок производительности",
+          "Интеграция modal и CTA-сценариев: выстроил понятный пользовательский путь к отправке заявки",
+          "Организация галереи проекта: реализовал полноэкранный просмотр и удобную навигацию по изображениям"
         ]
       }
     },
-
     "techStack": ["css-scss", "js", "swiper", "lightgallery"],
     "technologies": ["html", "css-scss", "js", "swiper", "lightgallery"]
   },
@@ -509,151 +412,143 @@
       "github": "https://github.com/DerLiewert/nura-elite",
       "liveDemo": "https://derliewert.github.io/nura-elite/"
     },
-
     "i18n": {
       "en": {
         "title": "NURA ELITE",
         "type": "Landing page",
-        "description": "NURA ELITE is a responsive landing page designed to showcase an elite cottage community located in Nur-Sultan.\nThe landing page is built with a strong focus on user experience, responsiveness, and visual content presentation.",
+        "description": "NURA ELITE is a responsive landing page designed to showcase a premium cottage community in Nur-Sultan.\nThe project focuses on visual presentation, user-friendly UX navigation, and proper content adaptation across different devices.",
         "features": [
           {
             "id": 1,
             "emoji": "🧭",
-            "title": "Scroll-based page navigation",
-            "description": "Header and footer links smoothly scroll the page to the corresponding sections, providing intuitive landing page navigation",
-            "details": []
+            "text": "Smooth scroll navigation across landing sections"
           },
           {
             "id": 2,
             "emoji": "🗺️",
-            "title": "Interactive map",
-            "description": "Displays the location of the cottage community on the map",
-            "details": []
+            "text": "Interactive map displaying the property location"
           },
           {
             "id": 3,
             "emoji": "🎞️",
-            "title": "Property image slider",
-            "description": "Clicking on an image opens a popup with an enlarged view, improving interaction with the gallery",
-            "details": []
+            "text": "Image slider with modal preview functionality"
           },
           {
             "id": 4,
             "emoji": "🧱",
-            "title": "“Construction technology” section with automatic two-column content layout",
-            "description": null,
-            "details": []
+            "text": "Dynamic two-column layout for the “Construction Technology” section"
           },
           {
             "id": 5,
             "emoji": "📱",
-            "title": "Responsive design",
-            "description": "All components are adapted to different screen sizes without losing visual consistency",
-            "details": []
+            "text": "Fully responsive interface"
           }
         ],
         "demonstrates": [
-          "UX-focused page navigation",
-          "Visually rich content with emphasis on property features and benefits",
-          "Responsive layout across multiple devices (desktop, tablet, mobile)"
+          "UX navigation design for a single-page landing",
+          "Handling and structuring visually rich content",
+          "Implementation of interactive UI elements (map, gallery, popups)",
+          "Responsive and cross-browser layout development"
+        ],
+        "challenges": [
+          "Implemented smooth scroll navigation: ensured correct anchor link behavior across different screen sizes with UX considerations",
+          "Integrated an interactive map: embedded it into the layout without compromising performance or visual consistency",
+          "Built a gallery with modal preview: designed smooth transitions and intuitive image interaction",
+          "Structured a complex content block: implemented a responsive two-column layout with automatic content distribution",
+          "Optimized for mobile devices: redesigned layout and component behavior for a seamless experience across all screen sizes"
         ]
       },
       "uk": {
         "title": "NURA ELITE",
-        "type": "Лендинг",
-        "description": "NURA ELITE — адаптивний лендинг для презентації елітного котеджного містечка в Нур-Султані.\nЛендинг створено з акцентом на зручність користувача, адаптивність і візуальну подачу контенту.",
+        "type": "Лендінг",
+        "description": "NURA ELITE — адаптивний лендінг для презентації елітного котеджного містечка в Нур-Султані.\nПроєкт сфокусований на візуальній подачі, зручності для користувача, UX-навігації та коректній адаптації контенту під різні пристрої.",
         "features": [
           {
             "id": 1,
             "emoji": "🧭",
-            "title": "Скрол-навігація сторінкою",
-            "description": "Посилання в хедері та футері плавно прокручують сторінку до відповідних секцій, забезпечуючи зручну навігацію лендингом",
-            "details": []
+            "text": "Плавна scroll-навігація між секціями лендінгу"
           },
           {
             "id": 2,
             "emoji": "🗺️",
-            "title": "Інтерактивна карта",
-            "description": "Відображає розташування котеджного містечка на мапі",
-            "details": []
+            "text": "Інтерактивна карта з відображенням локації об’єкта"
           },
           {
             "id": 3,
             "emoji": "🎞️",
-            "title": "Слайдер із фотографіями об’єктів",
-            "description": "Під час кліку на зображення відкривається попап зі збільшеним фото, що покращує взаємодію з галереєю",
-            "details": []
+            "text": "Слайдер із фотографіями об’єктів та modal-переглядом зображень"
           },
           {
             "id": 4,
             "emoji": "🧱",
-            "title": "Блок «Технологія будівництва» з автоматичною двоколонковою компоновкою контенту",
-            "description": null,
-            "details": []
+            "text": "Динамічна двоколонкова компоновка блоку «Технологія будівництва»"
           },
           {
             "id": 5,
             "emoji": "📱",
-            "title": "Адаптивність",
-            "description": "Усі компоненти адаптовані під різні роздільні здатності без втрати візуальної цілісності",
-            "details": []
+            "text": "Повністю адаптивний інтерфейс"
           }
         ],
         "demonstrates": [
-          "UX-орієнтовану навігацію сторінкою",
-          "Візуально насичений контент із фокусом на властивостях і перевагах об’єкта",
-          "Адаптивну верстку для різних пристроїв (десктоп, планшет, мобільний)"
+          "Проєктування UX-навігації односторінкового лендінгу",
+          "Робота з візуально насиченим контентом та його структуризацією",
+          "Реалізація інтерактивних UI-елементів (карта, галерея, popups)",
+          "Адаптивна та кросбраузерна верстка"
+        ],
+        "challenges": [
+          "Реалізація плавної scroll-навігації: забезпечив коректну поведінку якірних посилань з урахуванням UX і різних розмірів екранів",
+          "Інтеграція інтерактивної карти: акуратно вбудував карту в layout без втрати продуктивності та візуальної цілісності",
+          "Реалізація галереї з modal-переглядом: налаштував зручну взаємодію із зображеннями та плавні переходи",
+          "Організація складного контентного блоку: реалізував адаптивну двоколонкову компоновку з автоматичним розподілом елементів",
+          "Адаптація під мобільні пристрої: переробив layout і поведінку компонентів для комфортного використання на всіх типах екранів"
         ]
       },
       "ru": {
         "title": "NURA ELITE",
         "type": "Лендинг",
-        "description": "NURA ELITE — адаптивный лендинг для презентации элитного коттеджного городка в Нур-Султане.\nЛендинг построен с акцентом на удобство пользователя, адаптивность и визуальную презентацию контента.",
+        "description": "NURA ELITE — адаптивный лендинг для презентации элитного коттеджного городка в Нур-Султане.\nПроект сфокусирован на визуальной подаче и удобстве для пользователя, UX-навигации и корректной адаптации контента под разные устройства.",
         "features": [
           {
             "id": 1,
             "emoji": "🧭",
-            "title": "Скролл-навигация по странице",
-            "description": "Ссылки в хедере и футере плавно прокручивают страницу к соответствующим секциям, создавая удобную навигацию по лендингу",
-            "details": []
+            "text": "Плавная scroll-навигация по секциям лендинга"
           },
           {
             "id": 2,
             "emoji": "🗺️",
-            "title": "Интерактивная карта",
-            "description": "Отображает расположение коттеджного городка на карте",
-            "details": []
+            "text": "Интерактивная карта с отображением локации объекта на карте"
           },
           {
             "id": 3,
             "emoji": "🎞️",
-            "title": "Слайдер с фотографиями объектов",
-            "description": "При клике на изображение открывается попап с увеличенным фото, что улучшает взаимодействие с галереей",
-            "details": []
+            "text": "Слайдер с фотографиями объектов и modal-просмотром изображений"
           },
           {
             "id": 4,
             "emoji": "🧱",
-            "title": "Блок «Технология строения» с автоматической двухколоночной компоновкой контента",
-            "description": null,
-            "details": []
+            "text": "Динамическая двухколоночная компоновка блока «Технология строения»"
           },
           {
             "id": 5,
             "emoji": "📱",
-            "title": "Адаптивность",
-            "description": "Все компоненты адаптированы под разные разрешения без потери визуальной целостности",
-            "details": []
+            "text": "Полностью адаптивный интерфейс"
           }
         ],
         "demonstrates": [
-          "UX-ориентированная навигация по странице",
-          "Визуально насыщенный контент с фокусом на свойствах и преимуществах объекта",
-          "Адаптивная верстка под разные устройства (десктоп, планшет, мобильные)"
+          "Проектирование UX-навигации одностраничного лендинга",
+          "Работа с визуально насыщенным контентом и его структурированием",
+          "Реализация интерактивных UI-элементов (карта, галерея, popups)",
+          "Адаптивная и кроссбраузерная вёрстка"
+        ],
+        "challenges": [
+          "Реализация плавной scroll-навигации: обеспечил корректное поведение якорных ссылок с учётом UX и разных размеров экранов",
+          "Интеграция интерактивной карты: аккуратно встроил карту в layout без нарушения производительности и визуальной целостности",
+          "Реализация галереи с modal-просмотром: настроил удобное взаимодействие с изображениями и плавные переходы",
+          "Организация сложного контентного блока: реализовал адаптивную двухколоночную компоновку с автоматическим распределением элементов",
+          "Адаптация под мобильные устройства: переработал layout и поведение компонентов для комфортного использования на всех типах экранов"
         ]
       }
     },
-
     "techStack": ["css-scss", "js", "swiper", "leaflet"],
     "technologies": ["html", "css-scss", "js", "swiper", "leaflet"]
   },
@@ -699,303 +594,395 @@
       "github": "https://github.com/DerLiewert/obogrev-lux",
       "liveDemo": "https://derliewert.github.io/obogrev-lux/"
     },
-
     "i18n": {
       "en": {
         "title": "Obogrev Lux",
-        "type": "E-commerce website",
-        "description": "Obogrev Lux is a multi-page website demonstrating the architecture of an e-commerce platform with well-thought-out UX logic, interactive interfaces, and optimized content loading.\nThe project follows a typical online store structure: homepage, product catalog, and product detail page with dynamic components and a responsive interface.\nThe goal of the project is to showcase frontend architecture, UX thinking, and implementation quality.",
+        "type": "E-commerce Website",
+        "description": "Obogrev Lux is a multi-page frontend e-commerce project demonstrating interface architecture, UX patterns, and content loading optimization.\nThe project includes key pages such as the homepage, catalog, and product page, with a focus on interactivity, performance, and responsiveness.",
         "features": [
           {
             "id": 1,
             "emoji": "📖",
-            "title": "Multi-page website structure",
-            "description": "Home, catalog, and product pages",
-            "details": []
+            "text": "Multi-page architecture (homepage, catalog, product page)"
           },
           {
             "id": 2,
             "emoji": "🧱",
-            "title": "Complex three-level responsive header",
-            "description": "Fixed header with dynamic scroll behavior",
-            "details": []
+            "text": "Three-level responsive header with multi-level navigation and scroll behavior"
           },
           {
             "id": 3,
             "emoji": "🎞️",
-            "title": "Optimized slider initialization",
-            "description": "Sliders are initialized only when visible",
-            "details": []
+            "text": "Lazy initialization of sliders only when entering the viewport"
           },
           {
             "id": 4,
             "emoji": "📺",
-            "title": "Optimized YouTube video loading",
-            "description": "Video loads only when the tab is opened",
-            "details": []
+            "text": "Deferred loading of YouTube videos on tab activation"
           },
-          {
-            "id": 5,
-            "emoji": "🎴",
-            "title": "Product card view switcher",
-            "description": "Grid or list layout with extended information",
-            "details": []
-          },
+          { "id": 5, "emoji": "🎴", "text": "Switchable product view modes (grid / list)" },
           {
             "id": 6,
             "emoji": "📑",
-            "title": "Pagination without dynamic loading",
-            "description": "Full pagination logic with navigation controls",
-            "details": []
+            "text": "Pagination with full UI logic without data fetching"
           },
           {
             "id": 7,
             "emoji": "🗃️",
-            "title": "Accordion content blocks",
-            "description": "Mobile-friendly navigation structure",
-            "details": []
+            "text": "Accordion components and adaptive transformation of navigation into a compact accordion structure on mobile devices"
           },
           {
             "id": 8,
             "emoji": "🔍",
-            "title": "Product image zoom",
-            "description": "Hover zoom and popup image viewer",
-            "details": []
+            "text": "Product image zoom (hover for desktop / modal for touch devices)"
           },
-          {
-            "id": 9,
-            "emoji": "🗂️",
-            "title": "Tabs interface",
-            "description": "Content switching without page reload",
-            "details": []
-          },
-          {
-            "id": 10,
-            "emoji": "📱",
-            "title": "Responsive UX",
-            "description": "Consistent behavior across all devices",
-            "details": []
-          },
-          {
-            "id": 11,
-            "emoji": "⚙️",
-            "title": "Frontend showcase project",
-            "description": "Backend logic and cart functionality are not implemented",
-            "details": []
-          }
+          { "id": 9, "emoji": "🗂️", "text": "Tabs interface for product page content" },
+          { "id": 10, "emoji": "📱", "text": "Fully responsive interface with UX considerations" },
+          { "id": 11, "emoji": "⚙️", "text": "Frontend-only implementation without backend logic" }
         ],
         "demonstrates": [
-          "Frontend architecture for e-commerce projects",
-          "Advanced UX patterns",
-          "Complex UI behavior implementation",
-          "Performance optimization techniques",
+          "Designing e-commerce interface architecture",
+          "Implementing UX patterns for e-commerce applications",
+          "Working with the DOM, events, and UI state",
+          "Building complex UI scenarios",
+          "Optimizing loading and performance",
           "Responsive and cross-browser layout"
+        ],
+        "challenges": [
+          "Complex header implementation: built a three-level structure with dynamic scroll behavior and multi-level navigation",
+          "Slider optimization: implemented lazy initialization only when entering the viewport, reducing DOM and JS load",
+          "Media optimization: implemented deferred loading of YouTube videos on tab activation",
+          "Adaptive image zoom: implemented different interaction patterns for desktop (hover) and touch devices (modal)",
+          "Mobile UI adaptation: transformed navigation and interactive elements into mobile-friendly patterns (accordion, simplified structure)",
+          "UI logic without backend: implemented pagination and data display behavior similar to a real e-commerce application"
         ]
       },
       "uk": {
         "title": "Обігрів Люкс",
         "type": "Інтернет-магазин",
-        "description": "Obogrev Lux — багатосторінковий сайт, що демонструє архітектуру інтернет-магазину з продуманою UX-логікою, інтерактивними інтерфейсами та оптимізованим завантаженням контенту.\nПроєкт реалізує типову структуру реального онлайн-магазину: головна сторінка, каталог товарів і сторінка продукту з динамічними компонентами та адаптивним інтерфейсом.\nМета проєкту — продемонструвати архітектуру, UX-мислення та рівень frontend-реалізації.",
+        "description": "Obogrev Lux — багатосторінковий frontend-проєкт інтернет-магазину, що демонструє архітектуру e-commerce інтерфейсу, UX-патерни та оптимізацію завантаження контенту.\nПроєкт включає ключові сторінки: головну, каталог і сторінку товару, з акцентом на інтерактивність, продуктивність та адаптивність.",
         "features": [
           {
             "id": 1,
             "emoji": "📖",
-            "title": "Багатосторінкова структура сайту",
-            "description": "Сторінки: головна, каталог, сторінка товару",
-            "details": []
+            "text": "Багатосторінкова архітектура (головна, каталог, сторінка товару)"
           },
           {
             "id": 2,
             "emoji": "🧱",
-            "title": "Складний трирівневий адаптивний хедер",
-            "description": "Фіксована структура з динамічною поведінкою під час скролу",
-            "details": []
+            "text": "Трирівневий адаптивний header з багаторівневим меню та поведінкою при скролі"
           },
           {
             "id": 3,
             "emoji": "🎞️",
-            "title": "Оптимізована робота зі слайдерами",
-            "description": "Ініціалізація лише при появі у viewport",
-            "details": []
+            "text": "Лінива ініціалізація слайдерів лише при появі у viewport"
           },
           {
             "id": 4,
             "emoji": "📺",
-            "title": "Оптимізоване завантаження YouTube-відео",
-            "description": "Відео завантажується лише при відкритті вкладки",
-            "details": []
+            "text": "Відкладене завантаження YouTube-відео лише при активації табу"
           },
           {
             "id": 5,
             "emoji": "🎴",
-            "title": "Перемикання вигляду карток товарів",
-            "description": "Сітка або список із розширеною інформацією",
-            "details": []
+            "text": "Перемикання режимів відображення товарів (grid / list)"
           },
           {
             "id": 6,
             "emoji": "📑",
-            "title": "Пагінація без підвантаження",
-            "description": "Повноцінна навігація між сторінками",
-            "details": []
+            "text": "Пагінація з повною UI-логікою без завантаження даних"
           },
           {
             "id": 7,
             "emoji": "🗃️",
-            "title": "Accordion-блоки",
-            "description": "Адаптація навігації для мобільних пристроїв",
-            "details": []
+            "text": "Accordion-компоненти та адаптивна трансформація навігації у компактну accordion-структуру для мобільних пристроїв"
           },
           {
             "id": 8,
             "emoji": "🔍",
-            "title": "Збільшення зображень товару",
-            "description": "Zoom та popup-перегляд",
-            "details": []
+            "text": "Zoom зображень на сторінці товару (hover для desktop / modal для touch-пристроїв)"
           },
-          {
-            "id": 9,
-            "emoji": "🗂️",
-            "title": "Tabs-інтерфейс",
-            "description": "Перемикання контенту без перезавантаження",
-            "details": []
-          },
-          {
-            "id": 10,
-            "emoji": "📱",
-            "title": "Адаптивність та UX",
-            "description": "Коректна робота на всіх пристроях",
-            "details": []
-          },
-          {
-            "id": 11,
-            "emoji": "⚙️",
-            "title": "Frontend-демонстрація",
-            "description": "Backend-функціонал не реалізовано",
-            "details": []
-          }
+          { "id": 9, "emoji": "🗂️", "text": "Tabs-інтерфейс для контенту сторінки товару" },
+          { "id": 10, "emoji": "📱", "text": "Повністю адаптивний інтерфейс з урахуванням UX" },
+          { "id": 11, "emoji": "⚙️", "text": "Frontend-демонстрація без backend-логіки" }
         ],
         "demonstrates": [
-          "Архітектурне мислення",
-          "UX-патерни інтернет-магазинів",
-          "Роботу з DOM та станом UI",
-          "Оптимізацію продуктивності",
-          "Адаптивну верстку"
+          "Проєктування архітектури інтерфейсу інтернет-магазину",
+          "Реалізація UX-патернів e-commerce застосунків",
+          "Робота з DOM, подіями та станом UI",
+          "Реалізація складних UI-сценаріїв",
+          "Оптимізація завантаження та продуктивності",
+          "Адаптивна та кросбраузерна верстка"
+        ],
+        "challenges": [
+          "Реалізація складного header: налаштував трирівневу структуру з динамічною поведінкою при скролі та багаторівневим меню",
+          "Оптимізація слайдерів: реалізував ліниву ініціалізацію лише при появі у viewport, зменшивши навантаження на DOM і JS",
+          "Оптимізація медіа-контенту: впровадив відкладене завантаження YouTube-відео лише при активації відповідного табу",
+          "Реалізація адаптивного zoom для фото товару: реалізував різні сценарії взаємодії для desktop (hover) та touch-пристроїв (modal)",
+          "Адаптація UI під мобільні пристрої: переробив навігацію та інтерактивні елементи у зручні мобільні патерни (accordion, спрощена структура)",
+          "Організація UI-логіки без backend: реалізував поведінку пагінації та відображення даних як у реальному інтернет-магазині"
         ]
       },
       "ru": {
         "title": "Обогрев Люкс",
         "type": "Интернет-магазин",
-        "description": "Obogrev Lux - это многостраничный сайт, демонстрирующий архитектуру интернет-магазина с продуманной UX-логикой, интерактивными интерфейсами и оптимизированной загрузкой контента. \nПроект реализует типовую структуру реального онлайн-магазина: главная страница, каталог товаров и страница продукта с динамическими компонентами и адаптивным интерфейсом. \nЦель проекта - показать архитектуру, UX-мышление и уровень frontend-реализации интерфейсов интернет-магазина.",
+        "description": "Obogrev Lux — многостраничный frontend-проект интернет-магазина, демонстрирующий архитектуру e-commerce интерфейса, UX-паттерны и оптимизацию загрузки контента.\nПроект включает ключевые страницы: главную, каталог и страницу товара, с акцентом на интерактивность, производительность и адаптивность.",
         "features": [
           {
             "id": 1,
             "emoji": "📖",
-            "title": "Многостраничная структура сайта",
-            "description": "Страницы: главная, каталог, страница товара",
-            "details": []
+            "text": "Многостраничная архитектура (главная, каталог, страница товара)"
           },
           {
             "id": 2,
             "emoji": "🧱",
-            "title": "Сложная трёхуровневая адаптивная шапка с многоуровневым меню",
-            "description": "Основная часть шапки остается фиксированой. Скрытие/появление нижнего уровня хедера при скролле вниз/вверх для экономии пространства",
-            "details": [
-              "Top header - отображается только в верхней части страницы",
-              "Middle header - всегда фиксирован и доступен",
-              "Bottom header - скрывается при скролле вниз и появляется при скролле вверх не занимая лишнее место и сохраняет быстрый доступ к навигации",
-              "При наведении на пункты меню в bottom header, появляется многоуровневая детальная навигация"
-            ]
+            "text": "Трёхуровневый адаптивный header с многоуровневым меню и поведением при скролле"
           },
           {
             "id": 3,
             "emoji": "🎞️",
-            "title": "Оптимизированная работа со слайдерами",
-            "description": "Инициализируются только при появлении в viewport",
-            "details": [
-              "Инициализация слайдеров карточек товаров происходит только при появлении в viewport",
-              "Инициализация слайдеров изображений внутри карточек также происходит только при видимости",
-              "Это позволяет оптимизировать производительность и минимизировать нагрузку на DOM и JS"
-            ]
+            "text": "Ленивая инициализация слайдеров только при появлении в viewport"
           },
           {
             "id": 4,
             "emoji": "📺",
-            "title": "Оптимизированная загрузка YouTube-видео",
-            "description": "Видео на странице товара загружается только при открытии таба «Видео»",
-            "details": []
+            "text": "Отложенная загрузка YouTube-видео только при активации таба"
           },
           {
             "id": 5,
             "emoji": "🎴",
-            "title": "Переключение вида карточек товаров",
-            "description": "Отображение товаров в виде сетки или горизонтального списка с расширенной информацией",
-            "details": []
+            "text": "Переключение режимов отображения товаров (grid / list)"
           },
           {
             "id": 6,
             "emoji": "📑",
-            "title": "Пагинация без подгрузки",
-            "description": "Логика переключение страниц без подгрузки карточек: номера страниц, активная страница, троеточия, навигация между страницами с помощью стрелок",
-            "details": []
+            "text": "Пагинация с полной UI-логикой без загрузки данных"
           },
           {
             "id": 7,
             "emoji": "🗃️",
-            "title": "Раскрывающиеся блоки (Accordion)",
-            "description": "Адаптивное превращение навигации в accordion-структуру на мобильных устройствах",
-            "details": []
+            "text": "Accordion-компоненты и адаптивная трансформация навигации в компактную accordion-структуру для мобильных устройств"
           },
           {
             "id": 8,
             "emoji": "🔍",
-            "title": "Увеличение изображений на странице товара",
-            "description": "Zoom изображения при наведении мыши или открытие popup-окна с возможностью масштабирования изображения",
-            "details": [
-              "ПК: увеличение изображения при наведении мыши",
-              "Тач-устройства: открытие popup-окна с возможностью масштабирования изображения",
-              "При смене устройства в DevTools требуется обновление страницы (device-detection логика)"
-            ]
+            "text": "Zoom изображений на странице товара (hover для desktop / modal для touch-устройств)"
           },
           {
             "id": 9,
             "emoji": "🗂️",
-            "title": "Tabs-интерфейс",
-            "description": null,
-            "details": []
+            "text": "Tabs-интерфейс для контента страницы товара"
           },
           {
             "id": 10,
             "emoji": "📱",
-            "title": "Адаптивность и UX",
-            "description": "Полная адаптивность и корректная работа интерактивных элементов на разных разрешениях",
-            "details": []
+            "text": "Полностью адаптивный интерфейс с учётом UX"
           },
           {
             "id": 11,
             "emoji": "⚙️",
-            "title": "Проект является frontend-демонстрацией",
-            "description": "Не реализованы: логика добавления в корзину/избранное, backend-часть с подгрузкой реальных данных о товарах, авторизация",
-            "details": []
+            "text": "Frontend-демонстрация без backend-логики"
           }
         ],
         "demonstrates": [
-          "Архитектурное мышление в проектировании интерфейса многостраничного коммерческого сайта",
-          "Продвинутые UX-паттерны интернет-магазинов",
-          "Работу с DOM, событиями и состоянием UI",
+          "Проектирование архитектуры интерфейса интернет-магазина",
+          "Реализация UX-паттернов e-commerce приложений",
+          "Работа с DOM, событиями и состоянием UI",
           "Реализация сложных UI-сценариев",
-          "Оптимизацию загрузки",
+          "Оптимизация загрузки и производительности",
           "Адаптивная и кроссбраузерная вёрстка"
+        ],
+        "challenges": [
+          "Реализация сложного header: настроил трёхуровневую структуру с динамическим поведением при скролле и многоуровневым меню",
+          "Оптимизация слайдеров: реализовал ленивую инициализацию только при появлении в viewport, снизив нагрузку на DOM и JS",
+          "Оптимизация медиа-контента: внедрил отложенную загрузку YouTube-видео только при активации соответствующего таба",
+          "Реализация адаптивного zoom для фото товара: реализовал разные сценарии взаимодействия для desktop (hover) и touch-устройств (modal)",
+          "Адаптация UI под мобильные устройства: переработал навигацию и интерактивные элементы в удобные мобильные паттерны (accordion, упрощённая структура)",
+          "Организация UI-логики без backend: реализовал поведение пагинации и отображения данных как в реальном интернет-магазине"
         ]
       }
     },
-
     "techStack": ["css-scss", "js", "swiper"],
     "technologies": ["html", "css-scss", "js", "swiper", "youtube-api", "intersection-observer"]
   },
 
   {
     "id": 5,
+    "slug": "bank-hotel",
+    "preview": {
+      "pc": "images/projects/bank-hotel/intro.jpg",
+      "mobile": "images/projects/bank-hotel/intro-mobile.jpg"
+    },
+    "images": [
+      {
+        "pc": "images/projects/bank-hotel/intro.jpg",
+        "mobile": "images/projects/bank-hotel/intro-mobile.jpg"
+      },
+      {
+        "pc": "images/projects/bank-hotel/gallery.jpg",
+        "mobile": "images/projects/bank-hotel/gallery-mobile.jpg"
+      },
+      {
+        "pc": "images/projects/bank-hotel/accordion.jpg",
+        "mobile": "images/projects/bank-hotel/accordion-mobile.jpg"
+      },
+      {
+        "pc": "images/projects/bank-hotel/rooms.jpg",
+        "mobile": "images/projects/bank-hotel/rooms-mobile.jpg"
+      },
+      {
+        "pc": "images/projects/bank-hotel/popup.jpg",
+        "mobile": "images/projects/bank-hotel/popup-mobile.jpg"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/DerLiewert/bank-hotel",
+      "liveDemo": "https://derliewert.github.io/bank-hotel/"
+    },
+    "i18n": {
+      "en": {
+        "title": "Bank Hotel",
+        "type": "Landing Page",
+        "description": "Bank Hotel is a responsive landing page for a premium hotel, showcasing animations, user interaction scenarios, and modern UI patterns.",
+        "features": [
+          { "id": 1, "emoji": "✨", "text": "Scroll-based animations and parallax image effects" },
+          {
+            "id": 2,
+            "emoji": "📅",
+            "text": "Custom booking calendar with date and time selection (Check-in / Check-out)"
+          },
+          { "id": 3, "emoji": "🪟", "text": "Booking modal with state persistence" },
+          {
+            "id": 4,
+            "emoji": "🗃️",
+            "text": "Accordion with automatic closing of previously opened section"
+          },
+          { "id": 5, "emoji": "🎞️", "text": "Room slider with fade effect" },
+          { "id": 6, "emoji": "📱", "text": "Fully responsive layout" },
+          { "id": 7, "emoji": "📄", "text": "Single-page structure (anchor-based navigation)" }
+        ],
+        "demonstrates": [
+          "Working with the DOM and handling user events",
+          "Building interactive UI components without external libraries",
+          "Designing UX flows for landing pages",
+          "Implementing animations and scroll-based effects",
+          "Responsive layout for multiple device types"
+        ],
+        "challenges": [
+          "Custom calendar implementation: built date/time selection logic and constraints without using external libraries",
+          "Modal state management: implemented independent state persistence for each element, preserving selected values on reopen",
+          "Scroll animations: implemented element reveal and parallax effects without performance issues",
+          "Accordion behavior: implemented automatic closing of previous sections with smooth transitions",
+          "Responsive adaptation: ensured correct behavior of animations and interactive elements across mobile devices"
+        ]
+      },
+      "uk": {
+        "title": "Bank Hotel",
+        "type": "Лендінг",
+        "description": "Bank Hotel — адаптивний лендінг преміального готелю, що демонструє роботу з анімаціями, користувацькими сценаріями та сучасними UI-патернами.",
+        "features": [
+          {
+            "id": 1,
+            "emoji": "✨",
+            "text": "Анімація появи елементів і паралакс-ефект зображень під час скролу"
+          },
+          {
+            "id": 2,
+            "emoji": "📅",
+            "text": "Кастомний календар бронювання з вибором дати та часу (Check-in / Check-out)"
+          },
+          { "id": 3, "emoji": "🪟", "text": "Попап бронювання зі збереженням вибраних даних" },
+          {
+            "id": 4,
+            "emoji": "🗃️",
+            "text": "Аккордеон з автоматичним закриттям попереднього блоку"
+          },
+          { "id": 5, "emoji": "🎞️", "text": "Слайдер номерів готелю з fade-ефектом" },
+          { "id": 6, "emoji": "📱", "text": "Повністю адаптивна верстка" },
+          {
+            "id": 7,
+            "emoji": "📄",
+            "text": "Односторінкова структура (навігація без переходів між сторінками)"
+          }
+        ],
+        "demonstrates": [
+          "Робота з DOM та обробка користувацьких подій",
+          "Реалізація інтерактивних UI-компонентів без сторонніх бібліотек",
+          "Побудова UX-сценаріїв для лендінгів",
+          "Реалізація анімацій та scroll-based ефектів",
+          "Адаптивна верстка під різні пристрої"
+        ],
+        "challenges": [
+          "Реалізація кастомного календаря: розробив логіку вибору дати/часу та обмежень без використання готових бібліотек",
+          "Управління станом попапа: реалізував незалежне збереження вибраних даних для кожного елемента, що дозволяє зберігати значення при повторному відкритті",
+          "Анімації під час скролу: налаштував появу елементів і паралакс без втрати продуктивності",
+          "Робота з аккордеоном: реалізував поведінку з автоматичним закриттям попереднього блоку та плавними анімаціями",
+          "Адаптація під різні пристрої: забезпечив коректну роботу анімацій і інтерактивних елементів на мобільних пристроях"
+        ]
+      },
+      "ru": {
+        "title": "Bank Hotel",
+        "type": "Лендинг",
+        "description": "Bank Hotel — адаптивный лендинг премиального отеля, демонстрирующий работу с анимациями, пользовательскими сценариями и современными UI-паттернами.",
+        "features": [
+          {
+            "id": 1,
+            "emoji": "✨",
+            "text": "Анимация появления элементов и параллакс-эффект изображений при скролле"
+          },
+          {
+            "id": 2,
+            "emoji": "📅",
+            "text": "Кастомный календарь бронирования с выбором дат и времени (Check-in / Check-out)"
+          },
+          {
+            "id": 3,
+            "emoji": "🪟",
+            "text": "Попап бронирования с сохранением выбранных данных"
+          },
+          {
+            "id": 4,
+            "emoji": "🗃️",
+            "text": "Аккордеон с автоматическим закрытием предыдущего блока"
+          },
+          {
+            "id": 5,
+            "emoji": "🎞️",
+            "text": "Слайдер номеров отеля с fade-эффектом"
+          },
+          {
+            "id": 6,
+            "emoji": "📱",
+            "text": "Полностью адаптивная верстка"
+          },
+          {
+            "id": 7,
+            "emoji": "📄",
+            "text": "Одностраничная структура (пункты в хедере не ведут на отдельные страницы)"
+          }
+        ],
+        "demonstrates": [
+          "Работа с DOM и обработка пользовательских событий",
+          "Реализация интерактивных UI-компонентов без сторонних библиотек",
+          "Построение UX-сценариев для лендингов",
+          "Реализация анимаций и scroll-based эффектов",
+          "Адаптивная верстка под разные устройства"
+        ],
+        "challenges": [
+          "Реализация кастомного календаря: разработал логику выбора дат/времени и ограничений без использования готовых библиотек",
+          "Управление состоянием попапа: реализовал независимое хранение выбранных данных для каждого элемента, что позволяет сохранять значения при повторном открытии",
+          "Анимации при скролле: настроил появление элементов и параллакс без просадок производительности",
+          "Работа с аккордеоном: реализовал поведение с автоматическим закрытием предыдущего блока и плавными анимациями",
+          "Адаптация под разные устройства: обеспечил корректную работу анимаций и интерактивных элементов на мобильных устройствах"
+        ]
+      }
+    },
+    "techStack": ["css-scss", "js", "swiper"],
+    "technologies": ["html", "css-scss", "js", "swiper"]
+  },
+
+  {
+    "id": 6,
     "slug": "reton",
     "preview": {
       "pc": "images/projects/reton/company-map.jpg",
@@ -1027,498 +1014,162 @@
       "github": "https://github.com/DerLiewert/reton",
       "liveDemo": "https://derliewert.github.io/reton/"
     },
-
     "i18n": {
       "en": {
         "title": "RETON",
-        "type": "Landing page",
-        "description": "RETON is a single-page promotional website for a medical company specializing in ultrasonic physiotherapy devices.\nThe project is built as a landing page with a strong focus on interactivity, animations, and adapting complex UI blocks for different screen sizes.",
+        "type": "Landing Page",
+        "description": "RETON is a single-page promotional website for a medical company specializing in ultrasound physiotherapy devices.\nThe project is built as an interactive landing page with a focus on animations, complex UI components, and adaptation for different devices.",
         "features": [
           {
             "id": 1,
             "emoji": "🗺️",
-            "title": "Interactive company timeline with scroll-based tooltips",
-            "description": null,
-            "details": [
-              "Vertical timeline representing the company’s development",
-              "Tooltips with short descriptions are triggered during scrolling for each time period",
-              "Animations implemented using GSAP + ScrollTrigger",
-              "On mobile devices, the block is transformed into a simple list without animations or tooltips",
-              "Disabling non-essential scripts on mobile devices that are only required for the desktop version"
-            ]
+            "text": "Interactive timeline with tooltips and scroll-based animations (GSAP + ScrollTrigger)"
           },
-          {
-            "id": 2,
-            "emoji": "📍",
-            "title": "Interactive country map",
-            "description": "Client reviews displayed as tooltips",
-            "details": [
-              "Interactive map with markers that display client reviews in tooltips on interaction",
-              "Focus on visual clarity and minimal UI load"
-            ]
-          },
-          {
-            "id": 3,
-            "emoji": "🔘",
-            "title": "Clickable elements with toggle logic",
-            "description": "Expand / collapse descriptions",
-            "details": [
-              "Clicking on circular elements reveals short descriptions (toggle logic)",
-              "On smaller screens, the central decorative element is hidden and all items are shown at once",
-              "Disabling unnecessary scripts on mobile devices"
-            ]
-          },
+          { "id": 2, "emoji": "📍", "text": "Interactive country map with tooltip-based reviews" },
+          { "id": 3, "emoji": "🔘", "text": "Interactive UI components with toggle logic" },
           {
             "id": 4,
             "emoji": "🗃️",
-            "title": "FAQ blocks (accordion)",
-            "description": "Expandable sections with animated height handling",
-            "details": [
-              "Expandable / collapsible sections implemented",
-              "Opening animation accounts for dynamic content height",
-              "When one section opens, the previously opened one closes automatically",
-              "Comfortable interaction on both desktop and mobile devices"
-            ]
+            "text": "FAQ accordion with automatic closing of previous sections and smooth height animation"
           },
           {
             "id": 5,
             "emoji": "🎞️",
-            "title": "News and awards slider",
-            "description": null,
-            "details": []
+            "text": "Slider with custom configuration and display control"
           },
           {
             "id": 6,
             "emoji": "📱",
-            "title": "Responsiveness and optimization for different screen sizes",
-            "description": "Some complex and animated blocks are intentionally disabled on smaller screens and replaced with static, readable sections containing full information",
-            "details": []
+            "text": "Adaptation of complex UI components for different devices"
           },
           {
             "id": 7,
-            "emoji": "📄",
-            "title": "Single-page website",
-            "description": "Header navigation items do not lead to separate pages",
-            "details": []
+            "emoji": "⚡",
+            "text": "Performance optimization: disabling heavy animations and logic on mobile devices"
           }
         ],
         "demonstrates": [
-          "Working with the DOM and user interactions",
-          "Implementing scroll-based animations",
-          "Building interactive UI elements (tooltips, toggles, FAQ)",
+          "Working with the DOM and handling user events",
+          "Implementing scroll-based animations using GSAP",
+          "Building interactive UI components (tooltips, toggles, accordion)",
           "Adapting complex UI for different devices",
-          "UX-oriented approach to responsive design"
+          "UX-oriented approach to interface design"
+        ],
+        "challenges": [
+          "Scroll animation implementation: configured GSAP and ScrollTrigger animations with performance considerations",
+          "Mobile adaptation of complex sections: transformed interactive blocks into simplified static versions for better UX",
+          "Tooltip implementation: ensured correct positioning and behavior during interaction and scrolling",
+          "Dynamic height animation: implemented smooth expansion of FAQ sections with variable content",
+          "Script optimization: disabled heavy animations and unnecessary logic on mobile devices to improve performance"
         ]
       },
       "uk": {
         "title": "RETON",
-        "type": "Лендинг",
-        "description": "RETON — односторінковий промо-сайт для медичної компанії, що спеціалізується на ультразвукових фізіотерапевтичних апаратах.\nПроєкт реалізований у форматі лендингу з акцентом на інтерактивність, анімації та адаптацію складних UI-блоків під різні розміри екранів.",
+        "type": "Лендінг",
+        "description": "RETON — односторінковий промо-сайт для медичної компанії, що спеціалізується на ультразвукових фізіотерапевтичних апаратах.\nПроєкт реалізовано як інтерактивний лендінг з акцентом на анімації, складні UI-блоки та адаптацію під різні пристрої.",
         "features": [
           {
             "id": 1,
             "emoji": "🗺️",
-            "title": "Інтерактивна «Карта компанії» з tooltip-супроводом подій під час скролу",
-            "description": null,
-            "details": [
-              "Вертикальна шкала часу розвитку компанії",
-              "Під час скролу активується супровідний tooltip з коротким описом подій конкретного періоду",
-              "Анімації реалізовані за допомогою GSAP + ScrollTrigger",
-              "На мобільних пристроях блок перебудовується у звичайний список без анімацій та тултипів",
-              "Відключення зайвих скриптів на мобільних пристроях, необхідних лише для ПК-версії"
-            ]
+            "text": "Інтерактивна часова шкала з tooltip та scroll-анімаціями (GSAP + ScrollTrigger)"
           },
-          {
-            "id": 2,
-            "emoji": "📍",
-            "title": "Інтерактивна карта країни",
-            "description": "Відгуки клієнтів у вигляді tooltips",
-            "details": [
-              "Інтерактивна карта з точками, при взаємодії з якими з’являються tooltips з відгуками клієнтів",
-              "Акцент на візуальну зрозумілість та мінімальне навантаження на UI"
-            ]
-          },
-          {
-            "id": 3,
-            "emoji": "🔘",
-            "title": "Клікабельні елементи з toggle-логікою",
-            "description": "Відкриття / закриття опису",
-            "details": [
-              "Клік по кругових елементах відкриває короткий опис значення (toggle-логіка)",
-              "На малих екранах центральний декоративний елемент приховується, а всі пункти відображаються одразу",
-              "Відключення зайвих скриптів на мобільних пристроях"
-            ]
-          },
+          { "id": 2, "emoji": "📍", "text": "Інтерактивна карта країни з tooltip-відгуками" },
+          { "id": 3, "emoji": "🔘", "text": "Інтерактивні UI-компоненти з toggle-логікою" },
           {
             "id": 4,
             "emoji": "🗃️",
-            "title": "FAQ-блоки (Аккордеон)",
-            "description": "Розгортальні секції з анімацією з урахуванням висоти контенту",
-            "details": [
-              "Реалізовані відкривні / закривні секції",
-              "Анімація відкриття з урахуванням висоти контенту",
-              "При відкритті одного блоку попередній автоматично закривається",
-              "Зручна взаємодія на десктопі та мобільних пристроях"
-            ]
+            "text": "FAQ-акордеон з автоматичним закриттям попереднього блоку та плавною анімацією зміни висоти контенту"
           },
           {
             "id": 5,
             "emoji": "🎞️",
-            "title": "Слайдер новин та нагород",
-            "description": null,
-            "details": []
+            "text": "Слайдер з кастомною конфігурацією та керуванням відображенням"
           },
           {
             "id": 6,
             "emoji": "📱",
-            "title": "Адаптивність та оптимізація під різні екрани",
-            "description": "Частина складних та анімованих блоків свідомо відключається на менших екранах та замінюються на статичні, читабельні блоки з повною інформацією",
-            "details": []
+            "text": "Адаптація складних UI-компонентів під різні пристрої"
           },
           {
             "id": 7,
-            "emoji": "📄",
-            "title": "Односторінковий сайт",
-            "description": "Пункти у хедері не ведуть на окремі сторінки",
-            "details": []
+            "emoji": "⚡",
+            "text": "Оптимізація продуктивності: відключення важких анімацій і логіки на мобільних пристроях"
           }
         ],
         "demonstrates": [
-          "Роботу з DOM та користувацькими подіями",
-          "Роботу з анімаціями, прив’язаними до скролу",
-          "Реалізацію інтерактивних UI-елементів (tooltips, toggles, FAQ)",
-          "Адаптацію складного UI під різні пристрої",
-          "UX-орієнтований підхід до адаптивності"
+          "Робота з DOM та обробка користувацьких подій",
+          "Реалізація scroll-based анімацій з використанням GSAP",
+          "Створення інтерактивних UI-компонентів (tooltips, toggles, accordion)",
+          "Адаптація складного UI під різні пристрої",
+          "UX-орієнтований підхід до проєктування інтерфейсу"
+        ],
+        "challenges": [
+          "Реалізація scroll-анімацій: налаштував анімації з використанням GSAP і ScrollTrigger з урахуванням продуктивності",
+          "Адаптація складних блоків під мобільні пристрої: переробив інтерактивні секції в спрощені статичні версії для покращення UX",
+          "Робота з tooltip-елементами: реалізував коректне позиціонування та відображення при взаємодії та скролі",
+          "Анімація динамічної висоти: реалізував плавне відкриття FAQ-блоків з урахуванням змінного контенту",
+          "Оптимізація скриптів: відключив важкі анімації та зайву логіку на мобільних пристроях для підвищення продуктивності"
         ]
       },
       "ru": {
         "title": "RETON",
         "type": "Лендинг",
-        "description": "RETON — одностраничный промо-сайт для медицинской компании, специализирующейся на ультразвуковых физиотерапевтических аппаратах.\nПроект реализован в формате лендинга с акцентом на интерактивность, анимации и адаптацию сложных UI-блоков под разные размеры экранов.",
+        "description": "RETON — одностраничный промо-сайт для медицинской компании, специализирующейся на ультразвуковых физиотерапевтических аппаратах.\nПроект реализован как интерактивный лендинг с акцентом на анимации, сложные UI-блоки и адаптацию под разные устройства.",
         "features": [
           {
             "id": 1,
             "emoji": "🗺️",
-            "title": "Интерактивная «Карта компании» с tooltip-сопровождением при скролле",
-            "description": null,
-            "details": [
-              "Вертикальная временная шкала развития компании",
-              "При прокрутке активируется tooltip с кратким описанием событий конкретного периода",
-              "Анимации реализованы с использованием GSAP + ScrollTrigger",
-              "На мобильных устройствах блок перестраивается в обычный список без анимаций и тултипов",
-              "Отключение лишних скриптов на мобильных устройствах, используемых только в desktop-версии"
-            ]
+            "text": "Интерактивная временная шкала с tooltip и scroll-анимациями (GSAP + ScrollTrigger)"
           },
           {
             "id": 2,
             "emoji": "📍",
-            "title": "Интерактивная карта страны",
-            "description": "Отзывы клиентов в формате tooltips",
-            "details": [
-              "Интерактивная карта с точками, при взаимодействии с которыми отображаются tooltips с отзывами клиентов",
-              "Акцент на визуальную понятность и минимальную нагрузку на интерфейс"
-            ]
+            "text": "Интерактивная карта страны с tooltip-отзывами"
           },
           {
             "id": 3,
             "emoji": "🔘",
-            "title": "Кликабельные элементы с toggle-логикой",
-            "description": "Открытие / закрытие описания",
-            "details": [
-              "Клик по круговым элементам открывает краткое описание (toggle-логика)",
-              "На малых экранах центральный декоративный элемент скрывается, все пункты отображаются сразу",
-              "Отключение лишних скриптов на мобильных устройствах"
-            ]
+            "text": "Интерактивные UI-компоненты с toggle-логикой"
           },
           {
             "id": 4,
             "emoji": "🗃️",
-            "title": "FAQ-блоки (аккордеон)",
-            "description": "Разворачиваемые секции с анимацией с учётом высоты контента",
-            "details": [
-              "Реализованы открывающиеся / закрывающиеся секции",
-              "Анимация открытия с учётом динамической высоты контента",
-              "При открытии одного блока предыдущий автоматически закрывается",
-              "Удобное взаимодействие на десктопе и мобильных устройствах"
-            ]
+            "text": "FAQ-аккордеон с автоматическим закрытием предыдущего блока и плавной анимацией изменения высоты контента"
           },
           {
             "id": 5,
             "emoji": "🎞️",
-            "title": "Слайдер новостей и наград",
-            "description": null,
-            "details": []
+            "text": "Слайдер с кастомной конфигурацией и управлением отображением"
           },
           {
             "id": 6,
             "emoji": "📱",
-            "title": "Адаптивность и оптимизация под разные экраны",
-            "description": "Часть сложных и анимированных блоков осознанно отключается на малых экранах и заменяется на статичные, читабельные блоки с полной информацией",
-            "details": []
+            "text": "Адаптация сложных UI-компонентов под разные устройства"
           },
           {
             "id": 7,
-            "emoji": "📄",
-            "title": "Одностраничный сайт",
-            "description": "Пункты в хедере не ведут на отдельные страницы",
-            "details": []
+            "emoji": "⚡",
+            "text": "Оптимизация производительности: отключение тяжёлых анимаций и логики на мобильных устройствах"
           }
         ],
         "demonstrates": [
-          "Работу с DOM и пользовательскими событиями",
-          "Работу с анимациями, привязанными к скроллу",
-          "Реализацию интерактивных UI-элементов (tooltips, toggles, FAQ)",
-          "Адаптацию сложного UI под разные устройства",
-          "UX-ориентированный подход к адаптивности"
+          "Работа с DOM и обработка пользовательских событий",
+          "Реализация scroll-based анимаций с использованием GSAP",
+          "Создание интерактивных UI-компонентов (tooltips, toggles, accordion)",
+          "Адаптация сложного UI под разные устройства",
+          "UX-ориентированный подход к проектированию интерфейса"
+        ],
+        "challenges": [
+          "Реализация scroll-анимаций: настроил анимации с использованием GSAP и ScrollTrigger с учётом производительности",
+          "Адаптация сложных блоков под мобильные устройства: переработал интерактивные секции в упрощённые статичные версии для улучшения UX",
+          "Работа с tooltip-элементами: реализовал корректное позиционирование и отображение при взаимодействии и скролле",
+          "Анимация динамической высоты: реализовал плавное открытие FAQ-блоков с учётом изменяющегося контента",
+          "Оптимизация скриптов: отключил тяжёлые анимации и лишнюю логику на мобильных устройствах для повышения производительности"
         ]
       }
     },
-
     "techStack": ["css-scss", "js", "swiper", "scroll-trigger"],
     "technologies": ["html", "css-scss", "js", "swiper", "scroll-trigger", "tooltip"]
-  },
-
-  {
-    "id": 6,
-    "slug": "bank-hotel",
-    "preview": {
-      "pc": "images/projects/bank-hotel/intro.jpg",
-      "mobile": "images/projects/bank-hotel/intro-mobile.jpg"
-    },
-    "images": [
-      {
-        "pc": "images/projects/bank-hotel/intro.jpg",
-        "mobile": "images/projects/bank-hotel/intro-mobile.jpg"
-      },
-      {
-        "pc": "images/projects/bank-hotel/gallery.jpg",
-        "mobile": "images/projects/bank-hotel/gallery-mobile.jpg"
-      },
-      {
-        "pc": "images/projects/bank-hotel/accordion.jpg",
-        "mobile": "images/projects/bank-hotel/accordion-mobile.jpg"
-      },
-      {
-        "pc": "images/projects/bank-hotel/rooms.jpg",
-        "mobile": "images/projects/bank-hotel/rooms-mobile.jpg"
-      },
-      {
-        "pc": "images/projects/bank-hotel/popup.jpg",
-        "mobile": "images/projects/bank-hotel/popup-mobile.jpg"
-      }
-    ],
-
-    "links": {
-      "github": "https://github.com/DerLiewert/bank-hotel",
-      "liveDemo": "https://derliewert.github.io/bank-hotel/"
-    },
-
-    "i18n": {
-      "en": {
-        "title": "Bank Hotel",
-        "type": "Landing page",
-        "description": "Bank Hotel is a responsive landing page for a premium hotel, showcasing animations, user interaction flows, and modern UI patterns.",
-        "features": [
-          {
-            "id": 1,
-            "emoji": "✨",
-            "title": "Scroll-based animations and parallax image effects",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 2,
-            "emoji": "📅",
-            "title": "Custom booking calendar",
-            "description": "Room booking with date and time selection (Check in / Check out) and occupied slot visualization",
-            "details": []
-          },
-          {
-            "id": 3,
-            "emoji": "🪟",
-            "title": "Booking popup",
-            "description": "Preserves selected date and time for each element that opens the popup",
-            "details": []
-          },
-          {
-            "id": 4,
-            "emoji": "🗃️",
-            "title": "Expandable / collapsible sections (accordion)",
-            "description": "Saves vertical space and improves content readability",
-            "details": [
-              "The first section is open by default, others are closed",
-              "Opening one section automatically closes the previous one",
-              "Smooth layout transitions during open and close actions"
-            ]
-          },
-          {
-            "id": 5,
-            "emoji": "🎞️",
-            "title": "Hotel rooms slider with fade effect",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 6,
-            "emoji": "📱",
-            "title": "Responsive layout",
-            "description": "Correct behavior of animations and interactive elements across different screen resolutions",
-            "details": []
-          },
-          {
-            "id": 7,
-            "emoji": "📄",
-            "title": "Single-page website",
-            "description": "Header navigation items do not lead to separate pages",
-            "details": []
-          }
-        ],
-        "demonstrates": [
-          "Working with the DOM and user events",
-          "Implementing interactive UI components",
-          "Understanding landing page UX logic",
-          "Animations, scroll effects, and parallax",
-          "Responsive layout for desktop, tablet, and mobile devices"
-        ]
-      },
-      "uk": {
-        "title": "Bank Hotel",
-        "type": "Лендинг",
-        "description": "Bank Hotel — адаптивний лендинг преміального готелю, що демонструє роботу з анімаціями, користувацькими сценаріями та сучасними UI-патернами.",
-        "features": [
-          {
-            "id": 1,
-            "emoji": "✨",
-            "title": "Анімація появи елементів і паралакс-ефект під час скролу",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 2,
-            "emoji": "📅",
-            "title": "Кастомний календар бронювання",
-            "description": "Можливість бронювання номера з вибором дати та часу (Check in / Check out) і відображенням зайнятих слотів",
-            "details": []
-          },
-          {
-            "id": 3,
-            "emoji": "🪟",
-            "title": "Попап для бронювання",
-            "description": "Зберігає обрані дату та час для кожного елемента, який відкриває попап",
-            "details": []
-          },
-          {
-            "id": 4,
-            "emoji": "🗃️",
-            "title": "Розгортальні / згортальні блоки (акордеон)",
-            "description": "Економія вертикального простору та покращення читабельності",
-            "details": [
-              "За замовчуванням відкритий перший блок, інші закриті",
-              "Під час відкриття одного блоку попередній автоматично закривається",
-              "Плавне переміщення елементів під час відкриття та закриття"
-            ]
-          },
-          {
-            "id": 5,
-            "emoji": "🎞️",
-            "title": "Слайдер номерів готелю з fade-ефектом",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 6,
-            "emoji": "📱",
-            "title": "Адаптивна верстка",
-            "description": "Коректна робота анімацій та інтерактивних елементів на різних роздільних здатностях",
-            "details": []
-          },
-          {
-            "id": 7,
-            "emoji": "📄",
-            "title": "Односторінковий сайт",
-            "description": "Пункти в хедері не ведуть на окремі сторінки",
-            "details": []
-          }
-        ],
-        "demonstrates": [
-          "Роботу з DOM та користувацькими подіями",
-          "Реалізацію інтерактивних UI-компонентів",
-          "Розуміння UX-логіки лендингів",
-          "Анімації, скрол-ефекти та паралакс",
-          "Адаптивну верстку під різні пристрої (десктоп, планшет, мобільні)"
-        ]
-      },
-      "ru": {
-        "title": "Bank Hotel",
-        "type": "Лендинг",
-        "description": "Bank Hotel — адаптивный лендинг премиального отеля, демонстрирующий работу с анимациями, пользовательскими сценариями и современными UI-паттернами.",
-        "features": [
-          {
-            "id": 1,
-            "emoji": "✨",
-            "title": "Анимация появления элементов и параллакс-эффект изображений при скролле",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 2,
-            "emoji": "📅",
-            "title": "Кастомный календарь бронирования",
-            "description": "Возможность бронирования номера с выбором даты и времени (Check in / Check out) и отображением занятых слотов",
-            "details": []
-          },
-          {
-            "id": 3,
-            "emoji": "🪟",
-            "title": "Попап для бронирования",
-            "description": "Сохраняет выбранные дату и время для каждого элемента, который открыл попап",
-            "details": []
-          },
-          {
-            "id": 4,
-            "emoji": "🗃️",
-            "title": "Раскрывающиеся / закрывающиеся блоки (Аккордеон)",
-            "description": "Экономия вертикального пространства и улучшение читаемости",
-            "details": [
-              "По умолчанию открыт первый блок, остальные закрыты",
-              "При открытии одного блока предыдущий автоматически закрывается",
-              "Плавное перемещение элементов при открытии и закрытии"
-            ]
-          },
-          {
-            "id": 5,
-            "emoji": "🎞️",
-            "title": "Слайдер номеров отеля с fade-эффектом",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 6,
-            "emoji": "📱",
-            "title": "Адаптивная верстка",
-            "description": "Корректная работа анимаций и интерактивных элементов на разных разрешениях",
-            "details": []
-          },
-          {
-            "id": 7,
-            "emoji": "📄",
-            "title": "Сайт является лендингом",
-            "description": "Пункты в хедере не ведут на отдельные страницы",
-            "details": []
-          }
-        ],
-        "demonstrates": [
-          "Работа с DOM и пользовательскими событиями",
-          "Реализация интерактивных UI-компонентов",
-          "Понимание UX-логики лендингов",
-          "Анимации, скролл-эффекты, параллакс",
-          "Адаптивная верстка под разные устройства (десктоп, планшет, мобильные)"
-        ]
-      }
-    },
-
-    "techStack": ["css-scss", "js", "swiper"],
-    "technologies": ["html", "css-scss", "js", "swiper"]
   },
 
   {
@@ -1561,385 +1212,203 @@
     "i18n": {
       "en": {
         "title": "Shenya Anime",
-        "type": "SPA application",
-        "description": "Shenya Anime is a multi-page SPA application for browsing and searching information about anime, manga, characters, studios, and people related to the industry.\nThe project is built as a full-featured catalog with advanced navigation, filtering, dynamic routes, and optimized API interaction.\nThe application is developed with React + Redux using the Jikan API (MyAnimeList) and demonstrates handling asynchronous requests, API rate limits, complex routing, and state management.",
+        "type": "SPA Application",
+        "description": "Shenya Anime is a SPA application for searching and browsing information about anime, manga, characters, and studios.\nThe project is designed as an interactive catalog focused on smooth navigation, filtering, and handling large datasets.\nThe main focus is on application architecture, state management, and efficient interaction with external APIs.",
         "features": [
-          {
-            "id": 1,
-            "emoji": "🔀",
-            "title": "Advanced routing",
-            "description": "React Router with nested and dynamic routes, including URL-based tab navigation",
-            "details": [
-              "Nested and dynamic routes with React Router",
-              "URL-driven tab navigation (/anime/:id/details, /anime/:id/episodes, /anime/:id/characters, etc.)",
-              "Correct behavior on direct page access"
-            ]
-          },
+          { "id": 1, "emoji": "🔀", "text": "Dynamic routing with nested routes" },
           {
             "id": 2,
             "emoji": "🌐",
-            "title": "API integration and request optimization",
-            "description": "Request queue with throttling due to server-side rate limits (up to 3 requests per second)",
-            "details": [
-              "Axios used for asynchronous HTTP requests",
-              "Jikan API as the data source for anime and manga information",
-              "API rate limit: maximum 3 requests per second. A queued request system is implemented, especially important for the homepage"
-            ]
+            "text": "Integration with Jikan API and handling rate limits"
           },
           {
             "id": 3,
             "emoji": "🚫",
-            "title": "Request cancellation (Abort logic)",
-            "description": "Cancelling requests on component unmount or rapid tab switching to prevent unnecessary state updates",
-            "details": [
-              "Custom useAbortableDispatch hook for automatic and manual request cancellation"
-            ]
+            "text": "Request cancellation on state change (AbortController)"
           },
-          {
-            "id": 4,
-            "emoji": "🔎",
-            "title": "Quick search modal",
-            "description": "Search anime, manga, and characters by title",
-            "details": []
-          },
-          {
-            "id": 5,
-            "emoji": "📚",
-            "title": "Catalog with advanced filtering",
-            "description": "Dedicated pages with filters by genre, rating, status, score, and other parameters",
-            "details": []
-          },
+          { "id": 4, "emoji": "🔎", "text": "Quick search modal window" },
+          { "id": 5, "emoji": "📚", "text": "Catalog with advanced filtering and sorting" },
           {
             "id": 6,
             "emoji": "🦴",
-            "title": "Skeleton loading states",
-            "description": "Temporary UI placeholders displayed while data is loading",
-            "details": [
-              "Skeletons are used across all asynchronous pages and blocks",
-              "Prevents layout shifting during loading",
-              "Clear state separation: loading / success / empty / error"
-            ]
+            "text": "Skeleton loaders for improved UX during data fetching"
           },
           {
             "id": 7,
             "emoji": "🎞️",
-            "title": "Optimized fullscreen slider with fade effect",
-            "description": "Custom image loading logic for active slides only",
-            "details": [
-              "Issue: Swiper fade effect renders all slides as visible, breaking native lazy loading",
-              "Solution: custom loading logic for active and adjacent slides only"
-            ]
+            "text": "Fullscreen slider with optimized image loading and animations"
           },
-          {
-            "id": 8,
-            "emoji": "🖼️",
-            "title": "Image and video gallery",
-            "description": "Popup-based image and video viewing with optimized loading",
-            "details": []
-          },
-          {
-            "id": 9,
-            "emoji": "🗂️",
-            "title": "Tabs interface",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 10,
-            "emoji": "🔞",
-            "title": "NSFW content censorship",
-            "description": "Option to enable or disable 18+ content filtering",
-            "details": ["Image blur and NSFW labeling", "Client-side detection of 18+ content"]
-          },
-          {
-            "id": 11,
-            "emoji": "⭐",
-            "title": "Favorites system",
-            "description": "Adding anime and manga to favorites",
-            "details": []
-          },
-          {
-            "id": 12,
-            "emoji": "📜",
-            "title": "Custom dropdown components",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 13,
-            "emoji": "📱",
-            "title": "Responsiveness",
-            "description": "Fully responsive layout with correct behavior of interactive elements across screen sizes",
-            "details": []
-          }
+          { "id": 8, "emoji": "🖼️", "text": "Image and video gallery" },
+          { "id": 9, "emoji": "🗂️", "text": "Tabs interface with URL-based navigation" },
+          { "id": 10, "emoji": "🔞", "text": "NSFW content filtering" },
+          { "id": 11, "emoji": "⭐", "text": "Favorites with state persistence" },
+          { "id": 12, "emoji": "📜", "text": "Custom Select components (dropdowns)" },
+          { "id": 13, "emoji": "📱", "text": "Fully responsive layout" }
         ],
         "demonstrates": [
-          "SPA architecture with React + Redux + TypeScript",
-          "Working with REST APIs and rate limits",
-          "Complex routing and state management",
-          "Asynchronous request optimization",
-          "URL-driven state management",
-          "Thoughtful UX for large datasets",
-          "Responsive layout"
+          "Building SPA architecture with React + Redux Toolkit + TypeScript",
+          "Working with REST APIs and handling rate limits",
+          "Implementing request cancellation (AbortController)",
+          "Managing state via URL (query parameters)",
+          "Complex routing with dynamic routes",
+          "Optimizing data fetching and preventing redundant requests",
+          "Separating logic into reusable custom hooks",
+          "Implementing pagination (replace / append data)",
+          "Designing UX for large datasets"
+        ],
+        "challenges": [
+          "Synchronizing filters with URL: implemented query parameter state management, allowing state persistence on reload and shareable links",
+          "Nested routing implementation: configured tabs using nested routes, enabling direct navigation to specific sections (e.g., /anime/:id/characters)",
+          "Handling API rate limits: implemented request cancellation (AbortController) and request control logic to avoid redundant calls and errors",
+          "Improving UX during data loading: added skeleton loaders and loading state management for smoother interactions",
+          "Component architecture design: separated logic into reusable components and custom hooks, improving scalability and maintainability",
+          "Slider performance optimization: Swiper with fade effect was loading all images at once. Implemented custom lazy loading for active and adjacent slides, reducing load and improving initial render performance"
         ]
       },
       "uk": {
         "title": "Shenya Anime",
-        "type": "SPA-застосунок",
-        "description": "Shenya Anime — багатосторінковий SPA-застосунок для перегляду та пошуку інформації про аніме, мангу, персонажів, студії та людей, пов’язаних з індустрією.\nПроєкт реалізований як повноцінний каталог із розширеною навігацією, фільтрацією, динамічними маршрутами та оптимізованою роботою з API.\nСайт побудований на React + Redux із використанням Jikan API (MyAnimeList) і демонструє роботу з асинхронними запитами, обмеженнями API, складною маршрутизацією та керуванням станом застосунку.",
+        "type": "SPA-додаток",
+        "description": "Shenya Anime — це SPA-додаток для пошуку та перегляду інформації про аніме, манґу, персонажів і студії.\nПроєкт реалізовано як інтерактивний каталог з акцентом на зручну навігацію, фільтрацію та роботу з великими обсягами даних.\nОсновний фокус зроблено на архітектурі застосунку, управлінні станом і оптимізації взаємодії з API.",
         "features": [
-          {
-            "id": 1,
-            "emoji": "🔀",
-            "title": "Розширена маршрутизація",
-            "description": "React Router із вкладеними та динамічними маршрутами, а також таб-навігація через URL",
-            "details": [
-              "React Router із вкладеними та динамічними маршрутами",
-              "Таб-навігація через URL (/anime/:id/details, /anime/:id/episodes, /anime/:id/characters тощо)",
-              "Коректна робота при прямому переході за посиланням"
-            ]
-          },
-          {
-            "id": 2,
-            "emoji": "🌐",
-            "title": "Робота з API та оптимізація запитів",
-            "description": "Реалізована черга запитів із поступовою відправкою через обмеження сервера (до 3 запитів на секунду)",
-            "details": [
-              "Використовується Axios для асинхронних HTTP-запитів",
-              "Jikan API — джерело даних про аніме та мангу",
-              "Обмеження API: не більше 3 запитів на секунду. Реалізований стек запитів із поступовою відправкою, що критично для головної сторінки"
-            ]
-          },
+          { "id": 1, "emoji": "🔀", "text": "Динамічна маршрутизація з вкладеними роутами" },
+          { "id": 2, "emoji": "🌐", "text": "Інтеграція з Jikan API та обробка обмежень запитів" },
           {
             "id": 3,
             "emoji": "🚫",
-            "title": "Скасування запитів (Abort logic)",
-            "description": "Скасування запитів при розмонтуванні компонентів або швидкому перемиканні табів",
-            "details": [
-              "Кастомний хук useAbortableDispatch для автоматичного та ручного скасування запитів"
-            ]
+            "text": "Скасування запитів при зміні стану (AbortController)"
           },
-          {
-            "id": 4,
-            "emoji": "🔎",
-            "title": "Модальне вікно швидкого пошуку",
-            "description": "Пошук аніме, манги та персонажів за назвою",
-            "details": []
-          },
-          {
-            "id": 5,
-            "emoji": "📚",
-            "title": "Каталог із розширеним пошуком та фільтрацією",
-            "description": "Окрема сторінка з фільтрами за жанром, рейтингом, статусом, оцінкою та іншими параметрами",
-            "details": []
-          },
+          { "id": 4, "emoji": "🔎", "text": "Модальне вікно швидкого пошуку" },
+          { "id": 5, "emoji": "📚", "text": "Каталог з розширеною фільтрацією та сортуванням" },
           {
             "id": 6,
             "emoji": "🦴",
-            "title": "Skeleton-завантаження",
-            "description": "Тимчасова UI-заглушка на період завантаження даних",
-            "details": [
-              "Skeleton використовується для всіх асинхронних сторінок і блоків",
-              "Інтерфейс не «стрибає» під час завантаження",
-              "Чітке розділення станів: loading / success / empty / error"
-            ]
+            "text": "Відображення Skeleton під час завантаження даних для покращення UX"
           },
           {
             "id": 7,
             "emoji": "🎞️",
-            "title": "Оптимізований повноекранний слайдер з fade-ефектом",
-            "description": "Кастомна логіка завантаження зображень лише для активних слайдів",
-            "details": [
-              "Проблема: fade-ефект у Swiper робить всі слайди видимими, тому lazy loading не працює",
-              "Рішення: завантаження лише активного та сусідніх слайдів"
-            ]
+            "text": "Повноекранний слайдер з оптимізованим завантаженням зображень та анімацією"
           },
-          {
-            "id": 8,
-            "emoji": "🖼️",
-            "title": "Галерея зображень і відео",
-            "description": "Перегляд фото та відео в попапі з оптимізацією завантаження",
-            "details": []
-          },
-          {
-            "id": 9,
-            "emoji": "🗂️",
-            "title": "Tabs-інтерфейс",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 10,
-            "emoji": "🔞",
-            "title": "Цензура NSFW-контенту",
-            "description": "Можливість увімкнути або вимкнути відображення 18+ контенту",
-            "details": [
-              "Розмиття зображень і маркування NSFW",
-              "Визначення 18+ контенту на стороні клієнта"
-            ]
-          },
-          {
-            "id": 11,
-            "emoji": "⭐",
-            "title": "Додавання аніме та манги до обраного",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 12,
-            "emoji": "📜",
-            "title": "Кастомні випадаючі списки",
-            "description": null,
-            "details": []
-          },
-          {
-            "id": 13,
-            "emoji": "📱",
-            "title": "Адаптивність",
-            "description": "Повна адаптивність і коректна робота інтерактивних елементів на різних роздільних здатностях",
-            "details": []
-          }
+          { "id": 8, "emoji": "🖼️", "text": "Галерея зображень і відео" },
+          { "id": 9, "emoji": "🗂️", "text": "Tabs-інтерфейс з підтримкою навігації через URL" },
+          { "id": 10, "emoji": "🔞", "text": "Цензура NSFW-контенту" },
+          { "id": 11, "emoji": "⭐", "text": "Додавання в обране зі збереженням стану" },
+          { "id": 12, "emoji": "📜", "text": "Кастомні Select-компоненти (випадаючі списки)" },
+          { "id": 13, "emoji": "📱", "text": "Повністю адаптивна верстка" }
         ],
         "demonstrates": [
-          "Архітектуру SPA на React + Redux + TypeScript",
-          "Роботу з REST API та обмеженнями запитів",
-          "Складну маршрутизацію та керування станом",
-          "Оптимізацію асинхронних запитів",
-          "Керування станом через URL",
-          "Продуманий UX для великих обсягів даних",
-          "Адаптивну верстку"
+          "Побудова SPA-архітектури на React + Redux Toolkit + TypeScript",
+          "Робота з REST API з урахуванням обмежень (rate limit)",
+          "Реалізація скасування запитів (AbortController)",
+          "Управління станом через URL (query parameters)",
+          "Складна маршрутизація з динамічними роутами",
+          "Оптимізація завантаження даних і повторних запитів",
+          "Розділення логіки через перевикористовувані кастомні хуки",
+          "Робота з пагінацією (заміна / додавання даних)",
+          "Побудова UX для великих списків даних"
+        ],
+        "challenges": [
+          "Синхронізація фільтрів з URL: реалізував збереження стану через query-параметри, що дозволило зберігати стан при перезавантаженні та ділитися посиланнями",
+          "Реалізація вкладеної маршрутизації: налаштував систему табів через nested routes, що дозволило відкривати конкретні розділи напряму за посиланням (наприклад, /anime/:id/characters)",
+          "Робота з обмеженнями API: впровадив скасування запитів (AbortController) і контроль повторних запитів, щоб уникнути зайвого навантаження та помилок",
+          "Оптимізація UX при завантаженні даних: додав Skeleton-завантажувачі та керування станами завантаження для більш плавного інтерфейсу",
+          "Організація архітектури компонентів: розділив логіку на перевикористовувані компоненти та кастомні хуки, що спростило підтримку та масштабування",
+          "Оптимізація завантаження зображень у слайдері: Swiper з fade-ефектом завантажував усі зображення одразу, що погіршувало продуктивність. Реалізував кастомну lazy loading логіку лише для активного та сусідніх слайдів"
         ]
       },
       "ru": {
         "title": "Shenya Anime",
         "type": "SPA-приложение",
-        "description": "Shenya Anime — это многостраничное SPA-приложение для просмотра и поиска информации об аниме, манге, персонажах, студиях и людях, связанных с индустрией.\nПроект реализован как полноценный каталог с продвинутой навигацией, фильтрацией, динамическими роутами и оптимизированной работой с API.\nСайт построен на React + Redux с использованием Jikan API (MyAnimeList) и демонстрирует работу с асинхронными запросами, ограничениями API, сложной маршрутизацией и управлением состоянием приложения.",
+        "description": "Shenya Anime — это SPA-приложение для поиска и просмотра информации об аниме, манге, персонажах и студиях.\nПроект реализован как интерактивный каталог с упором на удобную навигацию, фильтрацию и работу с большими объёмами данных.\nОсновной акцент сделан на архитектуре приложения, управлении состоянием и оптимизации взаимодействия с API.",
         "features": [
           {
             "id": 1,
             "emoji": "🔀",
-            "title": "Продвинутая маршрутизация",
-            "description": "React Router с вложенными и динамическими маршрутами, а также таб-навигация через URL",
-            "details": [
-              "React Router с вложенными и динамическими маршрутами",
-              "Таб-навигация через URL (/anime/:id/details, /anime/:id/episodes, /anime/:id/characters и т.д.)",
-              "Корректная работа при прямом переходе по ссылке"
-            ]
+            "text": "Динамическая маршрутизация с вложенными роутами"
           },
           {
             "id": 2,
             "emoji": "🌐",
-            "title": "Работа с API и оптимизация запросов",
-            "description": "Реализована очередь запросов с постепенной отправкой для получения данных, так как на сервере ограничение на 3 запроса в секунду",
-            "details": [
-              "Используется Axios для выполнения асинхронных HTTP-запросов",
-              "Jikan API — предоставляет информацию об аниме и манге",
-              "Ограничение API: не более 3 запросов в секунду. Реализован стек запросов с постепенной отправкой, что особенно важно для главной страницы"
-            ]
+            "text": "Интеграция с Jikan API и обработка ограничений запросов"
           },
           {
             "id": 3,
             "emoji": "🚫",
-            "title": "Отмена запросов (Abort logic)",
-            "description": "Отмена запросов при размонтировании компонента или быстром переключении табов и предотвращение лишних обновлений состояния",
-            "details": [
-              "Реализация кастомного хука useAbortableDispatch, который позволяет отменять запросы как автоматически при размонтировании компонента, так и вручную в нужный момент"
-            ]
+            "text": "Отмена запросов при смене состояния (AbortController)"
           },
           {
             "id": 4,
             "emoji": "🔎",
-            "title": "Модальное окно быстрого поиска",
-            "description": "Поиск аниме, манги и персонажей по названию",
-            "details": []
+            "text": "Модальное окно быстрого поиска"
           },
           {
             "id": 5,
             "emoji": "📚",
-            "title": "Каталог с расширенным поиском и фильтрацией",
-            "description": "Отдельные страницы для аниме и манги с фильтрами по жанру, рейтингу, статусу, оценке и другим параметрам",
-            "details": []
+            "text": "Каталог с расширенной фильтрацией и сортировкой"
           },
           {
             "id": 6,
             "emoji": "🦴",
-            "title": "Отображение Skeleton - временная «заглушка»",
-            "description": "Показывается вместо основного контента страницы на время загрузки данных с сервера",
-            "details": [
-              "Skeleton используется для всех асинхронных страниц и блоков",
-              "UI не «прыгает» при загрузке данных",
-              "Чёткое разделение состояний: loading / success / empty / error"
-            ]
+            "text": "Отображение Skeleton во время загрузки данных для улучшения UX"
           },
           {
             "id": 7,
             "emoji": "🎞️",
-            "title": "Оптимизированный полноэкранный слайдер с fade-эффектом",
-            "description": "Реализована кастомная логика загрузки изображений только для активных слайдов",
-            "details": [
-              "Проблема: при fade-эффекте все слайды в Swiper считаются видимыми, так как размещены по оси Z и loading=\"lazy\" не работает",
-              "Решение: кастомная логика загрузки изображений только для активного и соседних слайдов"
-            ]
+            "text": "Полноэкранный слайдер с оптимизированной подгрузкой изображений и анимацией"
           },
           {
             "id": 8,
             "emoji": "🖼️",
-            "title": "Галерея изображений и видео",
-            "description": "Просмотр фото и видео в попапе, оптимизация загрузки видео",
-            "details": []
+            "text": "Галерея изображений и видео"
           },
           {
             "id": 9,
             "emoji": "🗂️",
-            "title": "Tabs-интерфейс",
-            "description": null,
-            "details": []
+            "text": "Tabs-интерфейс с поддержкой навигации через URL"
           },
           {
             "id": 10,
             "emoji": "🔞",
-            "title": "Цензура NSFW-контента",
-            "description": "Присутствует возможность включить/выключить цензуру для 18+ контента",
-            "details": [
-              "Блюр изображений и пометка NSFW",
-              "Определение 18+ контента на стороне клиента"
-            ]
+            "text": "Цензура NSFW-контента"
           },
           {
             "id": 11,
             "emoji": "⭐",
-            "title": "Добавление аниме и манги в избранное",
-            "description": null,
-            "details": []
+            "text": "Добавление в избранное с сохранением состояния"
           },
           {
             "id": 12,
             "emoji": "📜",
-            "title": "Кастомные выпадающие списки",
-            "description": null,
-            "details": []
+            "text": "Кастомные Select-компоненты (выпадающие списки)"
           },
           {
             "id": 13,
             "emoji": "📱",
-            "title": "Адаптивность",
-            "description": "Полная адаптивность и корректная работа интерактивных элементов на разных разрешениях",
-            "details": []
+            "text": "Полностью адаптивная верстка"
           }
         ],
         "demonstrates": [
-          "Архитектура SPA на React + Redux + TypeScript",
-          "Работа с REST API и ограничениями запросов",
-          "Сложная маршрутизация и управление состоянием",
-          "Оптимизация асинхронных запросов",
-          "Управление состоянием через URL",
-          "Продуманный UX при работе с большими объёмами данных",
-          "Адаптивная верстка"
+          "Построение SPA-архитектуры на React + Redux Toolkit + TypeScript",
+          "Работа с REST API с учётом ограничений (rate limit)",
+          "Реализация отмены запросов (AbortController)",
+          "Управление состоянием через URL (query params)",
+          "Сложная маршрутизация с динамическими роутами",
+          "Оптимизация загрузки данных и повторных запросов",
+          "Разделение логики через переиспользуемые хуки",
+          "Работа с пагинацией (замена / добавление данных)",
+          "Построение UX для больших списков данных"
+        ],
+        "challenges": [
+          "Синхронизация фильтров с URL: реализовал хранение состояния через query-параметры, что позволило сохранять состояние при перезагрузке и делиться ссылками",
+          "Реализация вложенной маршрутизации: настроил систему табов через nested routes, что позволило открывать конкретные разделы напрямую по ссылке и улучшило навигацию (например, /anime/:id/characters) ",
+          "Работа с ограничениями API: внедрил отмену запросов (AbortController) и контроль повторных запросов, чтобы избежать лишней нагрузки и ошибок",
+          "Оптимизация UX при загрузке данных: добавил Skeleton-загрузчики и управление состояниями загрузки для более плавного интерфейса",
+          "Организация архитектуры компонентов: разделил логику на переиспользуемые компоненты и кастомные хуки, что упростило поддержку и масштабирование приложения",
+          "Оптимизация загрузки изображений в слайдере: Swiper с fade-эффектом загружал все изображения сразу, что ухудшало производительность. Реализовал кастомную логику ленивой загрузки только для активного и соседних слайдов, снизив нагрузку и ускорив initial render"
         ]
       }
     },
-
-    "techStack": ["react", "redux", "ts", "axios", "react-router", "css-scss"],
+    "techStack": ["react", "redux", "ts", "axios", "react-router", "lightgallery", "css-scss"],
     "technologies": [
       "html",
       "css-scss",
@@ -1948,9 +1417,10 @@
       "redux",
       "react-router",
       "ts",
-      "swiper",
       "axios",
       "jikan-api",
+      "swiper",
+      "lightgallery",
       "react-select"
     ]
   }

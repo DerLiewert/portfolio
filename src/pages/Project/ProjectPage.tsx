@@ -149,11 +149,19 @@ function Project() {
             <ul className="proj-info__list proj-info__list--features">
               {projI18n.features.map((feature) => (
                 <li className="proj-info__list-item proj-text" key={feature.id}>
-                  {feature.emoji} {feature.title}
-                  {/* <span>
-                    {feature.emoji} {feature.title}.
-                  </span>{' '}
-                  {feature.description}. */}
+                  {feature.emoji} {feature.text}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* == Challenges == */}
+          <div className="proj-info__section">
+            <h3 className="proj-info__title">{t('challenges')}</h3>
+            <ul className="proj-info__list">
+              {projI18n.challenges.map((str, i) => (
+                <li className="proj-info__list-item proj-text" key={`${proj.slug} + ${i}`}>
+                  🎯{str}
                 </li>
               ))}
             </ul>
@@ -181,7 +189,7 @@ function Project() {
             </ul>
           </div>
 
-          {/* == Technologies == */}
+          {/* == Links == */}
           <div className="proj-info__section">
             <h3 className="proj-info__title">{t('links')}</h3>
             <div className="proj-info__buttons">
