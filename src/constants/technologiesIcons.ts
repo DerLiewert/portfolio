@@ -10,6 +10,8 @@ import gitIcon from '@/assets/icons/technologies/git.svg';
 import npmIcon from '@/assets/icons/technologies/npm.svg';
 import vscodeIcon from '@/assets/icons/technologies/vs-code.svg';
 import githubIcon from '@/assets/icons/technologies/github-logo-vector.svg';
+import i18nextIcon from '@/assets/icons/technologies/i18next.svg';
+import leafletIcon from '@/assets/icons/technologies/leaflet.svg';
 
 export const technologiesIcons = [
   { src: htmlIcon, alt: 'html' },
@@ -20,8 +22,10 @@ export const technologiesIcons = [
   { src: reduxIcon, alt: 'redux' },
   { src: tsIcon, alt: 'typescript' },
   { src: reactRouterIcon, alt: 'React Router' },
+  { src: i18nextIcon, alt: 'i18nex' },
   { src: gitIcon, alt: 'git' },
+  { src: githubIcon, alt: 'GitHub' },
   { src: npmIcon, alt: 'npm' },
   { src: vscodeIcon, alt: 'Visual Studio Code' },
-  { src: githubIcon, alt: 'GitHub' },
+  { src: leafletIcon, alt: 'Leaflet Map' },
 ] as const;

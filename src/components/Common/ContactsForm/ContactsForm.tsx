@@ -4,14 +4,14 @@ import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 import './ContactsForm.scss';
 
+type TypeFormMessage = 'success' | 'error' | 'sending' | null;
+
 export const ContactsForm = ({ className }: { className?: string }) => {
   const formRef = React.useRef<HTMLFormElement>(null);
   const messageTimeoutId = React.useRef<number>(null);
 
   const { t } = useTranslation('contacts-form');
-  const [typeMessage, setTypeMessage] = React.useState<'success' | 'error' | 'sending' | null>(
-    null,
-  );
+  const [typeMessage, setTypeMessage] = React.useState<TypeFormMessage>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -111,7 +111,9 @@ export const ContactsForm = ({ className }: { className?: string }) => {
         </div>
       </div>
       <div className="form__button-wrapper">
-        <button className="form__button" disabled={typeMessage === 'sending'}>{t('form.send')}</button>
+        <button className="form__button" disabled={typeMessage === 'sending'}>
+          {t('form.send')}
+        </button>
       </div>
     </form>
   );

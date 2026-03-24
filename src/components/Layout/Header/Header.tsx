@@ -1,9 +1,9 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import { breakpoints, sectionsId } from '@/constants';
+import { breakpoints, contacts, sectionsId } from '@/constants';
 import { toggleMenu } from '@/utils';
-import { LogoSvg, BurgerBtn, ThemeToggle, HeaderLink } from '@/components';
+import { LogoSvg, BurgerBtn, ThemeToggle, HeaderLink, GitHubSvg } from '@/components';
 import { supportedLanguages, type Language } from '@/typescript';
 import clsx from 'clsx';
 import './Header.scss';
@@ -92,6 +92,9 @@ export const Header = () => {
               ))}
             </div>
             <ThemeToggle className="header__theme" />
+            <a href={contacts.github} className="header__github" target="_blank" title="GitHub">
+              <GitHubSvg />
+            </a>
             <BurgerBtn
               className="header__burger"
               onClick={toggleMenu}

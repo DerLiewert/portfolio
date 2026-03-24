@@ -3,7 +3,8 @@ import { Trans, useTranslation } from 'react-i18next';
 import { useRegisterSection } from '@/hooks';
 import { sectionsId } from '@/constants';
 import type { SectionProps } from '@/typescript';
-import me from '@/assets/me.jpg';
+import CVFile from '@/CV_Mandryk_Vladyslav_Front-end_developer.pdf';
+import meImg from '@/assets/me.jpg';
 import './Intro.scss';
 
 export const Intro = ({ id }: SectionProps) => {
@@ -31,7 +32,12 @@ export const Intro = ({ id }: SectionProps) => {
               </p>
             </div>
             <div className="intro__buttons">
-              <button className="intro__button btn _primary">{t('hero.downloadCV')}</button>
+              <a
+                href={CVFile}
+                download="CV_Mandryk_Vladyslav_Front-end_developer"
+                className="intro__button btn _primary">
+                {t('hero.downloadCV')}
+              </a>
               <Link className="intro__button btn" to="/" state={{ scrollTo: sectionsId.contacts }}>
                 {t('hero.contacts')}
               </Link>
@@ -40,7 +46,7 @@ export const Intro = ({ id }: SectionProps) => {
           <div className="intro__image-block">
             <p className="intro__nickname">DerLiewert</p>
             <div className="intro__image">
-              <img src={me} alt="DerLiewert" aria-hidden="true" loading="lazy" />
+              <img src={meImg} alt="DerLiewert" aria-hidden="true" loading="lazy" />
             </div>
           </div>
         </div>

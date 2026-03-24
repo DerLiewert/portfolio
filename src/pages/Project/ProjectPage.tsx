@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router';
+import { useMatchMedia } from '@/hooks';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, EffectFade } from 'swiper/modules';
@@ -10,8 +11,8 @@ import 'swiper/scss';
 import 'swiper/scss/pagination';
 import 'swiper/scss/navigation';
 import 'swiper/scss/effect-fade';
+
 import './ProjectPage.scss';
-import { useMatchMedia } from '@/hooks';
 
 function Project() {
   const { theme } = useTheme();
@@ -26,7 +27,7 @@ function Project() {
     .filter(Boolean)
     .map(decodeURIComponent)[0];
 
-  const proj = projects.find((proj) => proj.slug === slug);
+  const proj = projects.find((proj) => proj.id === slug);
   if (!proj) return null;
 
   const projI18n = proj.i18n[currentOrDefaultLang(i18n.resolvedLanguage)];
@@ -126,7 +127,7 @@ function Project() {
             <h3 className="proj-info__title">{t('about')}</h3>
             <div className="proj-info__description proj-text">
               {projI18n.description.split('\n').map((str, i) => (
-                <p key={`${proj.slug} + ${i}`}>{str}</p>
+                <p key={`${proj.id} + ${i}`}>{str}</p>
               ))}
             </div>
           </div>
@@ -136,7 +137,7 @@ function Project() {
             <h3 className="proj-info__title">{t('demonstrates')}</h3>
             <ul className="proj-info__list">
               {projI18n.demonstrates.map((str, i) => (
-                <li className="proj-info__list-item proj-text" key={`${proj.slug} + ${i}`}>
+                <li className="proj-info__list-item proj-text" key={`${proj.id} + ${i}`}>
                   🎯{str}
                 </li>
               ))}
@@ -160,7 +161,7 @@ function Project() {
             <h3 className="proj-info__title">{t('challenges')}</h3>
             <ul className="proj-info__list">
               {projI18n.challenges.map((str, i) => (
-                <li className="proj-info__list-item proj-text" key={`${proj.slug} + ${i}`}>
+                <li className="proj-info__list-item proj-text" key={`${proj.id} + ${i}`}>
                   🎯{str}
                 </li>
               ))}
@@ -194,10 +195,10 @@ function Project() {
             <h3 className="proj-info__title">{t('links')}</h3>
             <div className="proj-info__buttons">
               <a className="proj-info__button btn _primary" href={proj.links.liveDemo}>
-                <ViewSvg /> Смотреть демо
+                <ViewSvg /> {t('viewDemo')}
               </a>
               <a className="proj-info__button btn" href={proj.links.github}>
-                <GitHubSvg /> GitHub репозиторий
+                <GitHubSvg /> {t('viewCode')}
               </a>
             </div>
           </div>

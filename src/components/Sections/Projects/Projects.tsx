@@ -23,11 +23,11 @@ export const Projects = ({ id }: SectionProps) => {
           <p className="projects__sub-title">{t('projects.text')}</p>
         </div>
         <div className="projects__body" ref={projectsBodyRef}>
-          {[...projects].reverse().map((project) => {
+          {projects.map((project) => {
             const projI18n = project.i18n[currentOrDefaultLang(i18n.resolvedLanguage)];
             return (
-              <div className="projects__item projects-item" key={project.slug}>
-                <Link to={`/${project.slug}`} className="projects-item__card">
+              <div className="projects__item projects-item" key={project.id}>
+                <Link to={`/${project.id}`} className="projects-item__card">
                   <img
                     loading="lazy"
                     className="projects-item__image"

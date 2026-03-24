@@ -8,5 +8,7 @@
   "techStacks": "Tech stack",
   "sourceCode": "Source code",
   "liveDemo": "Live demo",
+  "viewCode": "View on GitHub",
+  "viewDemo": "View Demo",
   "copy": "The project was created for educational and practical purposes and is intended to demonstrate frontend development skills in a portfolio"
 }

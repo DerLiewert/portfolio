@@ -1,8 +1,7 @@
 import type { Language } from "./language";
 
 export interface Project {
-  id: number;
-  slug: string;
+  id: string;
   preview: {
     pc: string;
     mobile: string;

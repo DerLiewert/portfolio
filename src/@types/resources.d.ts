@@ -64,7 +64,9 @@ interface Resources {
     "liveDemo": "Live demo",
     "sourceCode": "Source code",
     "techStacks": "Tech stack",
-    "technologies": "Technologies"
+    "technologies": "Technologies",
+    "viewCode": "View on GitHub",
+    "viewDemo": "View Demo"
   }
 }
 
