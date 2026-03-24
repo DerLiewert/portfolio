@@ -41,6 +41,7 @@ export const Projects = ({ id }: SectionProps) => {
                     <ul className="projects-item__tech-list">
                       {project.techStack.map((str) => {
                         const tech = technologies[str];
+                        if (!tech) return;
                         return (
                           <li className="projects-item__tech-item" key={tech.id}>
                             <img src={tech.icon.default} alt={tech.title} title={tech.title} />
