@@ -1,7 +1,7 @@
 {
   "hero": {
     "description": "Меня зовут Влад — <span>веб-разработчик</span>, увлеченный созданием красивых и адаптивных веб-сайтов.",
-    "stack": ["React", "Redux", "TypeScript", "UI/UX", "Performance", "7 реальных проектов"],
+    "stack": ["React", "Redux", "TypeScript", "UI/UX", "Performance", "8 реальных проектов"],
     "downloadCV": "Скачать CV",
     "contacts": "Мои контакты"
   },

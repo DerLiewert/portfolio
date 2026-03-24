@@ -105,6 +105,20 @@
       "default": "images/technologies/gsap.svg"
     }
   },
+  "emailjs": {
+    "id": "emailjs",
+    "title": "EmailJS",
+    "icon": {
+      "default": "images/technologies/emailjs.svg"
+    }
+  },
+  "i18n": {
+    "id": "i18n",
+    "title": "i18next",
+    "icon": {
+      "default": "images/technologies/i18next.svg"
+    }
+  },
   "scroll-trigger": {
     "id": "scroll-trigger",
     "title": "GSAP / ScrollTrigger",
@@ -136,6 +150,13 @@
   "intersection-observer": {
     "id": "intersection-observer",
     "title": "IntersectionObserver API",
+    "icon": {
+      "default": "images/technologies/tool.svg"
+    }
+  },
+  "context-api": {
+    "id": "context-api",
+    "title": "Сontext API",
     "icon": {
       "default": "images/technologies/tool.svg"
     }
