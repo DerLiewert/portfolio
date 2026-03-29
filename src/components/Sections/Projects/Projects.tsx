@@ -60,13 +60,16 @@ export const Projects = ({ id }: SectionProps) => {
                     title={t('projects.sourceCode')}>
                     <CodeSvg />
                   </a>
-                  <a
-                    href={project.links.liveDemo}
-                    className="projects-item__link projects-item__link--page"
-                    target="_blank"
-                    title={t('projects.liveDemo')}>
-                    <ViewSvg />
-                  </a>
+
+                  {project.id !== 'personal-portfolio' && (
+                    <a
+                      href={project.links.liveDemo}
+                      className="projects-item__link projects-item__link--page"
+                      target="_blank"
+                      title={t('projects.liveDemo')}>
+                      <ViewSvg />
+                    </a>
+                  )}
                 </div>
               </div>
             );

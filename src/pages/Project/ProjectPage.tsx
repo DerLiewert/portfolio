@@ -108,12 +108,14 @@ function Project() {
                   {t('sourceCode')}
                 </a>
               </p>
-              <p className="proj-preview__link-wrapper">
-                <a href={proj.links.liveDemo} target="_blank" className="proj-preview__link">
-                  <ViewSvg />
-                  {t('liveDemo')}
-                </a>
-              </p>
+              {proj.id !== 'personal-portfolio' && (
+                <p className="proj-preview__link-wrapper">
+                  <a href={proj.links.liveDemo} target="_blank" className="proj-preview__link">
+                    <ViewSvg />
+                    {t('liveDemo')}
+                  </a>
+                </p>
+              )}
             </div>
           </div>
         </div>
@@ -194,9 +196,11 @@ function Project() {
           <div className="proj-info__section">
             <h3 className="proj-info__title">{t('links')}</h3>
             <div className="proj-info__buttons">
-              <a className="proj-info__button btn _primary" href={proj.links.liveDemo}>
-                <ViewSvg /> {t('viewDemo')}
-              </a>
+              {proj.id !== 'personal-portfolio' && (
+                <a className="proj-info__button btn _primary" href={proj.links.liveDemo}>
+                  <ViewSvg /> {t('viewDemo')}
+                </a>
+              )}
               <a className="proj-info__button btn" href={proj.links.github}>
                 <GitHubSvg /> {t('viewCode')}
               </a>

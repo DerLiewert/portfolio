@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { type InputHTMLAttributes } from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
@@ -58,7 +58,7 @@ export const ContactsForm = ({ className }: { className?: string }) => {
       <div className="form__fields-wrapper">
         <div className="form__field">
           <label>{t('form.name')}</label>
-          <input
+          <ControlledInput
             type="text"
             name="user_name"
             className="form__input"
@@ -67,7 +67,7 @@ export const ContactsForm = ({ className }: { className?: string }) => {
         </div>
         <div className="form__field">
           <label>{t('form.gmail')}</label>
-          <input
+          <ControlledInput
             type="email"
             name="user_email"
             className="form__input"
@@ -77,7 +77,7 @@ export const ContactsForm = ({ className }: { className?: string }) => {
         </div>
         <div className="form__field">
           <label>{t('form.subject')}</label>
-          <input
+          <ControlledInput
             type="text"
             name="subject"
             className="form__input"
@@ -88,10 +88,12 @@ export const ContactsForm = ({ className }: { className?: string }) => {
         <div className="form__field">
           <label>{t('form.message')}</label>
           <div className="form__textarea-wrapper">
-            <textarea
+            <ControlledTextArea
               name="message"
               className="form__textarea"
-              placeholder={t('form.messagePlaceholder')}></textarea>
+              placeholder={t('form.messagePlaceholder')}
+            />
+
             {typeMessage && typeMessage !== 'sending' && (
               <p className={clsx('form__message', { _error: typeMessage === 'error' })}>
                 {t(`form.${typeMessage}`)}
@@ -117,4 +119,14 @@ export const ContactsForm = ({ className }: { className?: string }) => {
       </div>
     </form>
   );
+};
+
+const ControlledInput = (props: InputHTMLAttributes<HTMLInputElement>) => {
+  const [value, setValue] = React.useState('');
+  return <input {...props} value={value} onChange={(e) => setValue(e.target.value)} />;
+};
+
+const ControlledTextArea = (props: InputHTMLAttributes<HTMLTextAreaElement>) => {
+  const [value, setValue] = React.useState('');
+  return <textarea {...props} value={value} onChange={(e) => setValue(e.target.value)}></textarea>;
 };

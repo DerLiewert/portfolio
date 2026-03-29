@@ -2,7 +2,7 @@ import { Trans, useTranslation } from 'react-i18next';
 import { useRegisterSection } from '@/hooks';
 import { contacts } from '@/constants';
 import { ContactsForm } from '@/components/Common';
-import { GitHubSvg, InstagramSvg, TelegramSvg } from '@/components/Icons';
+import { GitHubSvg, TelegramSvg } from '@/components/Icons';
 import type { SectionProps } from '@/typescript';
 import './Contacts.scss';
 
@@ -47,15 +47,6 @@ export const Contacts = ({ id }: SectionProps) => {
                     target="_blank"
                     title="GitHub">
                     <GitHubSvg />
-                  </a>
-                </li>
-                <li className="socials__item">
-                  <a
-                    href={contacts.instagram}
-                    className="socials__link"
-                    target="_blank"
-                    title="Instagram">
-                    <InstagramSvg />
                   </a>
                 </li>
               </ul>
