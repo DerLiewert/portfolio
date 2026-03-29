@@ -1,11 +1,11 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
-import { ControlledInput, ControlledTextArea } from '@/components/UI';
+import { INPUT_NAMES } from '@/typescript';
+import type { FormData, InputName, TypeFormMessage } from '@/typescript';
+import { initialFormData } from '@/constants';
 import clsx from 'clsx';
 import './ContactsForm.scss';
-
-type TypeFormMessage = 'success' | 'error' | 'sending' | null;
 
 export const ContactsForm = ({ className }: { className?: string }) => {
   const formRef = React.useRef<HTMLFormElement>(null);
@@ -13,6 +13,13 @@ export const ContactsForm = ({ className }: { className?: string }) => {
 
   const { t } = useTranslation('contacts-form');
   const [typeMessage, setTypeMessage] = React.useState<TypeFormMessage>(null);
+  const [formData, setFormData] = React.useState<FormData>(initialFormData);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({ ...prev, [name as InputName]: value }));
+  };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -35,11 +42,12 @@ export const ContactsForm = ({ className }: { className?: string }) => {
           setTypeMessage('success');
 
           if (messageTimeoutId.current) clearTimeout(messageTimeoutId.current);
+
           messageTimeoutId.current = setTimeout(() => {
             setTypeMessage(null);
           }, 3000);
 
-          formRef.current?.reset();
+          setFormData(initialFormData);
         },
         (error) => {
           setTypeMessage('error');
@@ -59,40 +67,48 @@ export const ContactsForm = ({ className }: { className?: string }) => {
       <div className="form__fields-wrapper">
         <div className="form__field">
           <label>{t('form.name')}</label>
-          <ControlledInput
-            type="text"
-            name="user_name"
+          <input
             className="form__input"
+            type="text"
+            name={INPUT_NAMES.user_name}
+            value={formData[INPUT_NAMES.user_name]}
             placeholder={t('form.namePlaceholder')}
+            onChange={handleChange}
           />
         </div>
         <div className="form__field">
           <label>{t('form.gmail')}</label>
-          <ControlledInput
-            type="email"
-            name="user_email"
+          <input
             className="form__input"
+            type="email"
+            name={INPUT_NAMES.user_email}
+            value={formData[INPUT_NAMES.user_email]}
             placeholder="your.email@example.com"
+            onChange={handleChange}
             required
           />
         </div>
         <div className="form__field">
           <label>{t('form.subject')}</label>
-          <ControlledInput
-            type="text"
-            name="subject"
+          <input
             className="form__input"
+            type="text"
+            name={INPUT_NAMES.subject}
+            value={formData[INPUT_NAMES.subject]}
             placeholder={t('form.subjectPlaceholder')}
+            onChange={handleChange}
             required
           />
         </div>
         <div className="form__field">
           <label>{t('form.message')}</label>
           <div className="form__textarea-wrapper">
-            <ControlledTextArea
-              name="message"
+            <textarea
               className="form__textarea"
+              name={INPUT_NAMES.message}
+              value={formData[INPUT_NAMES.message]}
               placeholder={t('form.messagePlaceholder')}
+              onChange={handleChange}
             />
 
             {typeMessage && typeMessage !== 'sending' && (

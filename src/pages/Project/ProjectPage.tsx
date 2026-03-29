@@ -6,6 +6,7 @@ import { Pagination, Navigation, EffectFade } from 'swiper/modules';
 import { useData, useTheme } from '@/providers';
 import { currentOrDefaultLang } from '@/utils';
 import { Arrow, GitHubSvg, ViewSvg } from '@/components';
+import type { Swiper as ISwiper } from 'swiper';
 
 import 'swiper/scss';
 import 'swiper/scss/pagination';
@@ -13,11 +14,13 @@ import 'swiper/scss/navigation';
 import 'swiper/scss/effect-fade';
 
 import './ProjectPage.scss';
+import { useState } from 'react';
 
 function Project() {
   const { theme } = useTheme();
   const { projects, technologies } = useData();
   const { t, i18n } = useTranslation('project');
+  const [loadedSlides, setLoadedSlides] = useState<Set<number>>(new Set()); // Из-за EffectFade изображения на всех слайдах сразу подгружаются. Фикс, типа lazy-loading
   const isMobile = useMatchMedia('max', 600);
 
   const location = useLocation();
@@ -31,6 +34,19 @@ function Project() {
   if (!proj) return null;
 
   const projI18n = proj.i18n[currentOrDefaultLang(i18n.resolvedLanguage)];
+
+  const onSlideChange = (index: number) => {
+    const total = proj.images.length;
+    if (total === loadedSlides.size) return;
+
+    const prev = (index - 1 + total) % total;
+    const next = (index + 1) % total;
+
+    setLoadedSlides((prevState) => {
+      if (prevState.has(index) && prevState.has(prev) && prevState.has(next)) return prevState;
+      return new Set([...prevState, index, prev, next]);
+    });
+  };
 
   return (
     <div className="project">
@@ -47,6 +63,7 @@ function Project() {
       {/* === proj-preview === */}
       <div className="project__preview proj-preview">
         <div className="container">
+          {/* === image slider === */}
           <Swiper
             className="proj-preview__slider"
             modules={[Pagination, Navigation, EffectFade]}
@@ -60,13 +77,17 @@ function Project() {
               prevEl: '.proj-preview__button--prev',
               nextEl: '.proj-preview__button--next',
             }}
-            loop={true}>
+            loop={true}
+            onRealIndexChange={(swiper: ISwiper) => onSlideChange(swiper.realIndex)}
+            onInit={(swiper: ISwiper) => onSlideChange(swiper.realIndex)}>
             {proj.images.map((img, i) => (
               <SwiperSlide className="proj-preview__slide" key={img.pc}>
-                <img
-                  src={isMobile ? (img.mobile ? img.mobile : img.pc) : img.pc}
-                  alt={`Project Image #${i + 1}`}
-                />
+                {loadedSlides.has(i) && (
+                  <img
+                    src={isMobile ? (img.mobile ? img.mobile : img.pc) : img.pc}
+                    alt={`Project Image #${i + 1}`}
+                  />
+                )}
               </SwiperSlide>
             ))}
             <button
@@ -82,6 +103,8 @@ function Project() {
               <Arrow />
             </button>
           </Swiper>
+
+          {/* === proj-preview__info === */}
           <div className="proj-preview__info">
             <div className="proj-preview__tech proj-preview-tech">
               <p className="proj-preview-tech__text">{t('techStacks')}:</p>
@@ -89,7 +112,6 @@ function Project() {
                 {proj.techStack.map((str) => {
                   const tech = technologies[str];
                   if (!tech) return null;
-
                   return (
                     <li className="proj-preview-tech__item" key={tech.id}>
                       <img
@@ -101,6 +123,8 @@ function Project() {
                 })}
               </ul>
             </div>
+
+            {/* === proj-preview__links === */}
             <div className="proj-preview__links">
               <p className="proj-preview__link-wrapper">
                 <a href={proj.links.github} target="_blank" className="proj-preview__link">
