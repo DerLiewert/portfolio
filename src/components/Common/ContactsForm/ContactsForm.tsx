@@ -1,6 +1,7 @@
-import React, { type InputHTMLAttributes } from 'react';
+import React from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
+import { ControlledInput, ControlledTextArea } from '@/components/UI';
 import clsx from 'clsx';
 import './ContactsForm.scss';
 
@@ -119,14 +120,4 @@ export const ContactsForm = ({ className }: { className?: string }) => {
       </div>
     </form>
   );
-};
-
-const ControlledInput = (props: InputHTMLAttributes<HTMLInputElement>) => {
-  const [value, setValue] = React.useState('');
-  return <input {...props} value={value} onChange={(e) => setValue(e.target.value)} />;
-};
-
-const ControlledTextArea = (props: InputHTMLAttributes<HTMLTextAreaElement>) => {
-  const [value, setValue] = React.useState('');
-  return <textarea {...props} value={value} onChange={(e) => setValue(e.target.value)}></textarea>;
 };
