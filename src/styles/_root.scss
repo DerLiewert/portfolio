@@ -6,6 +6,8 @@
   --text-color: #fff;
   --text-color-rgb: 255, 255, 255;
 
+  --intro-subtitle: #cfcfff;
+
   --bg-color: #181818;
   --bg-color-rgb: 24, 24, 24;
 
@@ -41,6 +43,8 @@
 [data-theme='light'] {
   --text-color: #181818;
   --text-color-rgb: 24, 24, 24;
+
+  --intro-subtitle: #4a4ab0;
 
   --bg-color: #f3f4f5;
   --bg-color-rgb: 248, 249, 251;

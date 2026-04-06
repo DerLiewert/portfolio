@@ -32,9 +32,10 @@ interface Resources {
     },
     "hero": {
       "contacts": "My contacts",
-      "description": "My name is Vlad — <span>web developer</span>, passionate about creating beautiful and responsive websites.",
+      "description": "I build fast and responsive web interfaces with a focus on UX, performance, and scalable architecture.",
       "downloadCV": "Download CV",
-      "stack": ["React", "Redux", "TypeScript", "UI/UX", "Performance", "7 real projects"]
+      "name": "Vladyslav Mandryk",
+      "stack": ["React", "Redux", "TypeScript", "UI/UX", "Performance", "8 real projects"]
     },
     "projects": {
       "liveDemo": "View live demo",

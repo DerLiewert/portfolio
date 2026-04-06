@@ -59,29 +59,68 @@
     }
   }
 
+  &__header {
+    margin-bottom: 18px;
+    @include media-min($mobile) {
+      margin-bottom: 20px;
+    }
+    @include media-min($tablet) {
+      margin-bottom: 25px;
+    }
+  }
+
   &__title {
     display: inline-block;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     background: var(--accent-secondary)
-      linear-gradient(0deg, var(--accent-secondary) 0%, var(--accent-primary) 80%);
+      linear-gradient(15deg, var(--accent-secondary) 0%, var(--accent-primary) 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    font-size: 32px;
+    @include media-max(363px) {
+      background: var(--accent-secondary)
+        linear-gradient(0deg, var(--accent-secondary) 0%, var(--accent-primary) 75%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
     @include media-min($mobileSmall) {
       font-size: 36px;
     }
     @include media-min($mobile) {
       font-size: 42px;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
     @include media-min($tablet) {
-      font-size: 52px;
+      font-size: 50px;
     }
     @include media-min($pcSmall) {
       font-size: 56px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__sub-title {
+    display: inline-block;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--intro-subtitle);
+    opacity: 0.85;
+
+    @include media-min($mobileSmall) {
+      font-size: 30px;
+    }
+    @include media-min($mobile) {
+      font-size: 32px;
+    }
+    @include media-min($tablet) {
+      font-size: 36px;
+    }
+    @include media-min($pcSmall) {
+      font-size: 42px;
     }
   }
 
@@ -99,30 +138,23 @@
   }
 
   &__text {
-    font-size: 26px;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 1.4;
     margin-bottom: 25px;
 
     span {
-      font-weight: 700;
-      background: var(--accent-secondary)
-        linear-gradient(-15deg, var(--accent-secondary) 0%, var(--accent-primary) 80%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      white-space: nowrap;
     }
 
-    @include media-max(1200px) {
-      font-size: 24px;
-      font-size: 22px;
+    @include media-max($pcSmall) {
+      font-size: 21px;
     }
     @include media-max($tablet) {
-      font-size: 22px;
-      font-size: 20px;
+      font-size: 19px;
       margin-bottom: 22px;
     }
     @include media-max($mobile) {
-      font-size: 18px;
+      font-size: 17px;
       margin-bottom: 20px;
     }
     @include media-max($mobileSmall) {
@@ -131,6 +163,10 @@
   }
 
   &__stack {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 3px;
     line-height: 1.5;
     opacity: 0.8;
 
@@ -148,6 +184,9 @@
       }
     }
 
+    @include media-max($tablet) {
+      justify-content: center;
+    }
     @include media-max($mobile) {
       font-size: 15px;
     }
@@ -172,8 +211,9 @@
   &__image-block {
     flex: 0 1 520px;
     position: relative;
+
     @include media-max($pc) {
-      min-width: 400px;
+      min-width: 390px;
       flex-basis: 38%;
     }
 

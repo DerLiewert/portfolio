@@ -16,11 +16,10 @@ export const Intro = ({ id }: SectionProps) => {
       <div className="container intro__container">
         <div className="intro__body">
           <div className="intro__content">
-            <h1 className="intro__title">
-              Front-end
-              <br />
-              Developer
-            </h1>
+            <div className="intro__header">
+              <h1 className="intro__title">Front-end Developer</h1>
+              <h2 className="intro__sub-title">{t('hero.name')}</h2>
+            </div>
             <div className="intro__description">
               <p className="intro__text">
                 <Trans i18nKey="hero.description" ns={'main'} components={{ span: <span /> }} />

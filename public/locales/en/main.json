@@ -1,6 +1,7 @@
 {
   "hero": {
-    "description": "My name is Vlad — <span>web developer</span>, passionate about creating beautiful and responsive websites.",
+    "name": "Vladyslav Mandryk",
+    "description": "I build fast and responsive web interfaces with a focus on UX, performance, and scalable architecture.",
     "stack": ["React", "Redux", "TypeScript", "UI/UX", "Performance", "8 real projects"],
     "downloadCV": "Download CV",
     "contacts": "My contacts"
